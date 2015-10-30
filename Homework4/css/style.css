@@ -1,0 +1,174 @@
+body {
+	background: url(../img/bg.jpg);
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block; 
+}
+
+/*HEADER*/
+
+.wrapper {
+	margin: 40px auto 0;
+	width: 1000px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+}
+
+.logo {
+	float: left;
+	padding: 9px 0 0 25px;
+	line-height: 0;
+}
+
+.contacts {
+	float: right;
+	padding: 10px 30px 0 0;
+	line-height: 18px;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+.contacts p:first-child {
+	font-weight: bold;
+}
+
+.menu_countries {
+	float: right;
+	clear: right;
+	margin-top: 30px;
+	margin-right: 25px;
+}
+
+.menu_countries li {
+	float: left;
+}
+
+.menu_countries a {
+	display: block;
+	margin: 0 8px;
+	text-align: center;
+	font-size: 10px;
+	color: #128aa7;
+}
+
+.pic {
+	clear: both;
+}
+
+/*CONTAINER*/
+
+.nav {
+	background: #363636;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+}
+
+.nav li {
+	float: left;
+	position: relative;
+	line-height: 30px;
+}
+
+.nav li a {
+	display: block;
+	padding: 0 35px 0 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.nav>li:first-child {
+	padding-left: 65px;
+}
+
+.nav li a:hover{
+	text-decoration:underline;
+}
+
+.nav ul {
+	position:absolute;
+	left:-9999px;
+	opacity:0;
+	background: #363636;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+}
+
+.nav ul li {
+	float: none;
+	width: 150px;
+	background: #363636;
+}
+
+.nav li:hover ul {
+	left:0; 
+	opacity:1;
+}
+
+.conteiner {
+	float: left;
+	background: url(../img/bg_3_col.png) repeat-y;
+	width: 1000px;
+}
+
+.content {
+	line-height: 22px;
+	color: #424c43;
+}
+
+.info {
+	float: left;
+	padding-top: 15px;
+	width: 210px;
+}
+
+.info>p:first-child {
+	text-align: center;
+	font-size: 18px;
+}
+
+.box {
+	padding: 0 15px;
+	border-bottom: 1px solid #c7cacf;
+}
+
+.h {
+	height: 240px;
+}
+
+.content .box:last-child {
+	border-bottom: none;
+}
+
+.center {
+	margin: 0 auto;
+	padding: 15px;
+	width: 550px;
+}
+
+.news {
+	float: right;
+	padding-top: 15px;
+	width: 210px;
+}
+
+.news>p:first-child {
+	text-align: center;
+	font-size: 18px;
+}
+
+/*FOOTER*/
+.footer	{
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: white;
+}
