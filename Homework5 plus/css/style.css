@@ -1,0 +1,39 @@
+
+div {
+	height: 638px;
+	width: 590px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+
+table {
+	/*width: 500px; */
+	/*height: 540px; */
+	border-spacing: 10px;
+	background: url(../img/border.png);
+	position: absolute;
+	top: -22px;
+	left: -22px;
+}
+td {
+	background: white;
+	/*width: 1px;*/
+	/*height: 1px;*/
+}
+
+.yellow {
+	background: url(../img/yellow.png);
+}
+
+.red {
+	background: url(../img/red.png);
+}
+
+.black {
+	background: url(../img/black.png);
+}
+
+.blue {
+	background: url(../img/blue.png);
+}
