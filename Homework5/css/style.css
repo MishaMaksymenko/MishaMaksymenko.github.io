@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Helvetica Neue', Tahoma, sans-serif;
+	color: white;
+	font-size: 14px;
+}
+
+.wrapper {
+	background: url(../img/bg.png) no-repeat;
+	width: 1215px;
+	height: 1064px;
+	margin: 0 auto;
+	border: 1px solid black;
+	position: relative;
+}
+
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*HEADER*/
+
+.menu {
+	background: url(../img/menu_bg.png) no-repeat;	
+}
+
+.menu ul {
+	float: right;
+	margin-right: 20px;
+}
+
+.menu li {
+	float: left;
+	position: relative;
+}
+
+.menu a {
+	display: block;
+	padding: 0 10px 0 10px;
+	line-height: 36px;
+	text-decoration: none;
+	color: #60b5ed;
+}
+
+.menu span {
+	text-decoration: underline;
+}
+
+.menu a:hover {
+	background-color: #4eabda;
+	color: white;
+}
+
+.menu li:nth-child(5) {
+	margin-right: 15px;
+}
+
+.menu li:nth-child(5):after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	right: -15px;
+ 	height: 31px;
+ 	width: 2px;
+	background: url(../img/line.png) no-repeat;
+}
+
+.menu li:nth-child(6) a {
+	color: white;
+	padding-left: 46px;
+}
+
+.menu li:nth-child(6) a:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 6.5px;
+	left: 15px;
+ 	height: 31px;
+ 	width: 21px;
+	background: url(../img/flag.png) no-repeat;
+}
+
+.menu li:nth-child(6) a:hover {
+	background: none;
+	text-decoration: underline;	
+}
+
+ .menu li:last-child a {
+	color: white;
+	/* background: url(../img/button.png) no-repeat; */
+	background: #4eacda;
+	background: -moz-linear-gradient(top, #4eacda 0%, #2e7ac4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4eacda), color-stop(100%,#2e7ac4));
+	background: -webkit-linear-gradient(top, #4eacda 0%,#2e7ac4 100%);
+	background: -o-linear-gradient(top, #4eacda 0%,#2e7ac4 100%);
+	background: -ms-linear-gradient(top, #4eacda 0%,#2e7ac4 100%);
+	background: linear-gradient(to bottom, #4eacda 0%,#2e7ac4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eacda', endColorstr='#2e7ac4',GradientType=0 );
+} 
+
+.box {
+	position: absolute;
+	margin: -305px 0 0 -280px;
+	top: 50%;
+	left: 50%;
+	width: 560px;
+	height: 610px;
+	text-align: center; 
+}
+
+/*FORM BOX*/
+
+h1 {
+	line-height: 60px;
+	font-size: 24px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+	margin-top: 2px;
+	padding: 35px 0 10px;
+	color: #ccc;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form a {
+	display: block; 
+	margin: 0 auto; 
+	line-height: 35px;
+	width: 276px;
+	color: transparent; 
+	background: url(../img/fb.png) no-repeat; 
+}
+
+.form .line {
+	margin: 20px 0 20px 0;
+	background: url(../img/line_gor.png) no-repeat center;
+}
+
+form div {
+	margin-bottom: 20px;
+}
+
+input[placeholder] {
+  	padding-left: 20px;
+  	height: 35px;
+  	width: 255px;
+  	color: white;
+  	border: none;
+  	background: #101010;;
+  	border-bottom: 1px solid #484847;
+  	font-family: 'Helvetica Neue', Tahoma, sans-serif;
+}
+
+input[placeholder]:focus {
+	background: #1b5288;
+	-webkit-box-shadow: 0px 0px 9px 1px rgba(74,133,174,1);
+	-moz-box-shadow: 0px 0px 9px 1px rgba(74,133,174,1);
+	box-shadow: 0px 0px 9px 1px rgba(74,133,174,1);
+}
+
+input[type="submit"] {
+	position: absolute;
+	display: block;
+	opacity: 0;
+	height: 35px;
+	width: 150px;
+}
+
+form .sub_button {
+	line-height: 35px;
+	margin: 0 auto;
+	width: 150px;
+	color: white;
+	border-radius: 2px;
+	background: #4eacda;
+	background: -moz-linear-gradient(top, #4eacda 0%, #2e7ac4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4eacda), color-stop(100%,#2e7ac4));
+	background: -webkit-linear-gradient(top, #4eacda 0%,#2e7ac4 100%);
+	background: -o-linear-gradient(top, #4eacda 0%,#2e7ac4 100%);
+	background: -ms-linear-gradient(top, #4eacda 0%,#2e7ac4 100%);
+	background: linear-gradient(to bottom, #4eacda 0%,#2e7ac4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eacda', endColorstr='#2e7ac4',GradientType=0 );
+}
+
+p:last-child {
+	line-height: 15px;
+	margin: 20px auto 0;
+	width: 312px;
+	font-size: 11px;
+}
