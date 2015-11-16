@@ -13,14 +13,15 @@ body {
 	font-family: 'Helvetica Neue', Tahoma, sans-serif;
 	color: white;
 	font-size: 14px;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
 }
 
 .wrapper {
-	background: url(../img/bg.png) no-repeat;
-	width: 1215px;
+	/*width: 1215px;*/
 	height: 1064px;
 	margin: 0 auto;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	position: relative;
 }
 
@@ -33,7 +34,7 @@ body {
 /*HEADER*/
 
 .menu {
-	background: url(../img/menu_bg.png) no-repeat;	
+	background: url(../img/menu_bg.png);	
 }
 
 .menu ul {
@@ -171,6 +172,7 @@ h1 {
 	height: 35px;
 	top: -4px;
 	left: 23px;
+	border-right: 1px solid #4c68a9;
 }
 
 .fb span {
