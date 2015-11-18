@@ -17,14 +17,6 @@ body {
 	background-size: cover;
 }
 
-.wrapper {
-	/*width: 1215px;*/
-	height: 1064px;
-	margin: 0 auto;
-	/*border: 1px solid black;*/
-	position: relative;
-}
-
 .clearfix:after{
 	content: '';
 	clear: both;
@@ -32,14 +24,18 @@ body {
 }
 
 /*HEADER*/
+.top_line {
+	background: url(../img/menu_bg.png);	
+}
 
 .menu {
-	background: url(../img/menu_bg.png);	
+	margin: 0 auto;
+	width: 1215px;
 }
 
 .menu ul {
 	float: right;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 
 .menu li {
@@ -113,6 +109,13 @@ body {
 } 
 
 /*FORM BOX*/
+.wrapper {
+	position: absolute;
+	height: 95%;
+	width: 100%;
+	min-height: 700px;
+	max-height: 1400px;
+}
 
 .box {
 	position: absolute;
@@ -190,9 +193,30 @@ h1 {
 	right: 22px;
 }
 
-.form .line {
+.line {
+	position: relative;
 	margin: 20px 0 20px 0;
-	background: url(../img/line_gor.png) no-repeat center;
+	/*background: url(../img/line_gor.png) no-repeat center;*/
+}
+
+.line:before {
+	content: '';
+	position: absolute;
+	width: 123px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid black;
+	top: 50%;
+	left: 142px;
+}
+
+.line:after {
+	content: '';
+	position: absolute;
+	width: 123px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid black;
+	top: 50%;
+	left: 294px;
 }
 
 form div {
