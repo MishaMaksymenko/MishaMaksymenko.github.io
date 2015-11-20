@@ -47,7 +47,7 @@
 
 		<main class="clearfix" >
 			<div class="catalog">
-				<div class="cap">
+				<div class="cap cap--1">
 					КАТАЛОГ ПРОДУКЦИИ:
 				</div>
 				<ul>
@@ -61,7 +61,7 @@
 						</ul>
 					</li>
 					<li>
-						<p>ДИСКИ</p>
+						<p class="p2">ДИСКИ</p>
 						<ul>
 							<li><a href="">Наименование 1</a></li>
 							<li><a href="">Наименование 2</a></li>
@@ -70,7 +70,7 @@
 						</ul>
 					</li>
 					<li>
-						<p>БОЛТЫ</p>
+						<p class="p2">БОЛТЫ</p>
 						<ul>
 							<li><a href="">Наименование 1</a></li>
 							<li><a href="">Наименование 2</a></li>
@@ -81,28 +81,32 @@
 				</ul>
 			</div>
 			<div class="filter">
-				<div class="cap">
+				<div class="cap cap--2">
 					БРEНДЫ:
 				</div>
 				<form action="#">
 					<p>ШИНЫ</p>
-					<dl>
-						<dt><input type="checkbox" id="1"></dt>
-						<dd><label for="1">Бренд 1</label></dd>
-						<dt><input type="checkbox" id="2"></dt>
-						<dd><label for="2">Бренд 2</label></dd>
-						<dt><input type="checkbox" id="3"></dt>
-						<dd><label for="3">Бренд 3</label></dd>
-					</dl>
-					<p>ДИСКИ</p>
-					<dl>
-						<dt><input type="checkbox" id="4"></dt>
-						<dd><label for="4">Бренд 1</label></dd>
-						<dt><input type="checkbox" id="5"></dt>
-						<dd><label for="5">Бренд 2</label></dd>
-						<dt><input type="checkbox" id="6"></dt>
-						<dd><label for="6">Бренд 3</label></dd>
-					</dl>
+					<div>
+						<input type="checkbox" id="1">
+						<label for="1">Бренд 1</label>
+					</div><div>
+						<input type="checkbox" id="2">
+						<label for="2">Бренд 2</label>
+					</div><div>
+						<input type="checkbox" id="3">
+						<label for="3">Бренд 3</label>
+					</div>
+					<p class="p3">ДИСКИ</p>
+					<div>
+						<input type="checkbox" id="4">
+						<label for="4">Бренд 1</label>
+					</div><div>
+						<input type="checkbox" id="5">
+						<label for="5">Бренд 2</label>
+					</div><div>
+						<input type="checkbox" id="6">
+						<label for="6">Бренд 3</label>
+					</div>
 					<div>
 						<input type="submit" value="ВЫБРАТЬ">
 					</div>						
@@ -110,69 +114,86 @@
 			</div>
 			<div class="products">				
 				<div class="tire product1">
-					<p class="brand_name">Goodyear</p>
-					<p class="model">Ultra Grip Extreme</p>
-					<div class="pic"><img src="img/tire1.png" alt=""></div>
-					<p class="price">90.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Goodyear</span>
+						<span class="model">Ultra Grip Extreme</span>
+						<div class="prod_img"><img src="img/tire1.png" alt=""></div>
+						<span class="price">90.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product2">
-					<p class="brand_name">Nokian</p>
-					<p class="model">Hakkapeliitta R</p>
-					<div class="pic"><img src="img/tire2.png" alt=""></div>
-					<p class="price">115.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Nokian</span>
+						<span class="model">Hakkapeliitta R</span>
+						<div class="prod_img"><img src="img/tire2.png" alt=""></div>
+						<span class="price">115.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product3">
-					<p class="brand_name">Hankook</p>
-					<p class="model">K 708 155/65 R14</p>
-					<div class="pic"><img src="img/tire3.png" alt=""></div>
-					<p class="price">393.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Hankook</span>
+						<span class="model">K 708 155/65 R14</span>
+						<div class="prod_img"><img src="img/tire3.png" alt=""></div>
+						<span class="price">393.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product1">
-					<p class="brand_name">Goodyear</p>
-					<p class="model">Ultra Grip Extreme</p>
-					<div class="pic"><img src="img/tire1.png" alt=""></div>
-					<p class="price">90.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Goodyear</span>
+						<span class="model">Ultra Grip Extreme</span>
+						<div class="prod_img"><img src="img/tire1.png" alt=""></div>
+						<span class="price">90.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product2">
-					<p class="brand_name">Nokian</p>
-					<p class="model">Hakkapeliitta R</p>
-					<div class="pic"><img src="img/tire2.png" alt=""></div>
-					<p class="price">115.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Nokian</span>
+						<span class="model">Hakkapeliitta R</span>
+						<div class="prod_img"><img src="img/tire2.png" alt=""></div>
+						<span class="price">115.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product3">
-					<p class="brand_name">Hankook</p>
-					<p class="model">K 708 155/65 R14</p>
-					<div class="pic"><img src="img/tire3.png" alt=""></div>
-					<p class="price">393.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Hankook</span>
+						<span class="model">K 708 155/65 R14</span>
+						<div class="prod_img"><img src="img/tire3.png" alt=""></div>
+						<span class="price">393.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product1">
-					<p class="brand_name">Goodyear</p>
-					<p class="model">Ultra Grip Extreme</p>
-					<div class="pic"><img src="img/tire1.png" alt=""></div>
-					<p class="price">90.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Goodyear</span>
+						<span class="model">Ultra Grip Extreme</span>
+						<div class="prod_img"><img src="img/tire1.png" alt=""></div>
+						<span class="price">90.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product2">
-					<p class="brand_name">Nokian</p>
-					<p class="model">Hakkapeliitta R</p>
-					<div class="pic"><img src="img/tire2.png" alt=""></div>
-					<p class="price">115.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Nokian</span>
+						<span class="model">Hakkapeliitta R</span>
+						<div class="prod_img"><img src="img/tire2.png" alt=""></div>
+						<span class="price">115.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
 				<div class="tire product3">
-					<p class="brand_name">Hankook</p>
-					<p class="model">K 708 155/65 R14</p>
-					<div class="pic"><img src="img/tire3.png" alt=""></div>
-					<p class="price">393.00 грн.</p>
-					<a href=""></a>
+					<a class="link" href="">
+						<span class="brand_name">Hankook</span>
+						<span class="model">K 708 155/65 R14</span>
+						<div class="prod_img"><img src="img/tire3.png" alt=""></div>
+						<span class="price">393.00 </span>
+						<span class="currency"> грн.</span>
+					</a>
 				</div>
-				
 			</div>
 		</main>
 
