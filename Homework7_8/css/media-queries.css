@@ -430,119 +430,7 @@
 		float: none;
 		text-align: center;
 	}
-
-
-	@media screen and (max-width: 320px) {
-
-		.container_1 {
-			height: 516px;
-		}
-
-		.logo {
-			/*width: 155px;
-			margin: 0 auto;*/
-			margin-left: 26%; 
-		}
-
-		.menu {
-			margin-left: 47%;
-		}
-
-		.slider_bg {
-			background: none;
-		}
-
-		.slider__article {
-			float: none;
-			width: 74%;
-			margin: 0 auto;
-		}
-
-		.slider__img {
-			display: none;
-		}
-
-		.about {
-			margin-top: 70px;
-			margin-left: 25%;
-			width: 73%;
-
-		}
-
-		.about--dialog {
-			margin-top: 0;
-		}
-
-		.about--music {
-			margin-top: 15px;
-			margin-bottom: 66px;
-		}
-
-		/*.people {
-			padding-top: 67px;
-		}*/
-
-		.testimonials {
-			margin-left: 27px;
-			width: 90%;
-		}
-
-		.testimonials__title {
-			padding-top: 24px;
-			font-size: 24px;
-		}
-
-		.testimonials__title span {
-			display: block;
-		}
-
-		.testimonials__text {
-			padding-top: 4px;
-			padding-left: 44px;
-			height: 168px;
-
-		}
-
-		.updates {
-			margin-left: 2%;
-			width: 104%;			
-
-		}
-
-		.updates__link {
-			/*height: 30px;*/
-			width: 98%;
-		}
-
-		.updates__link span {
-			width: 98%;
-
-		}
-
-		.brands {
-			padding-top: 23px;
-			padding-bottom: 25px;
-		}
-
-		.brands__item {
-			margin: 30px 18px;
-		}
-
-		.brands__item:first-child {
-			margin-left: 18px;
-		}
-
-		.container_5 {
-			display: none;
-		}
-
-		.menu--footer {
-			display: none;
-		}
-
-		.design {
-			padding-top: 42px;
-		}
+}
 
 
 
@@ -557,21 +445,126 @@
 
 
 
+@media screen and (max-width: 320px) {
+
+	.container_1 {
+		height: 516px;
+	}
+
+	.logo {
+		/*width: 155px;
+		margin: 0 auto;*/
+		margin-left: 26%; 
+	}
+
+	.menu {
+		margin-left: 47%;
+	}
+
+	.slider_bg {
+		background: none;
+	}
+
+	.slider__article {
+		float: none;
+		width: 74%;
+		margin: 0 auto;
+	}
+
+	.slider__img {
+		display: none;
+	}
+
+	.about {
+		margin-top: 70px;
+		margin-left: 25%;
+		width: 73%;
 
 	}
 
+	.about--dialog {
+		margin-top: 0;
+	}
+
+	.about--music {
+		margin-top: 15px;
+		margin-bottom: 66px;
+	}
+
+	/*.people {
+		padding-top: 67px;
+	}*/
+
+	.testimonials {
+		margin-left: 27px;
+		width: 90%;
+	}
+
+	.testimonials__title {
+		padding-top: 24px;
+		font-size: 24px;
+	}
+
+	.testimonials__title span {
+		display: block;
+	}
+
+	.testimonials__text {
+		padding-top: 4px;
+		padding-left: 44px;
+		height: 168px;
+
+	}
+
+	.updates {
+		margin-left: 2%;
+		width: 104%;			
+
+	}
+
+	.updates__link {
+		/*height: 30px;*/
+		width: 98%;
+	}
+
+	.updates__link span {
+		width: 98%;
+
+	}
+
+	.brands {
+		padding-top: 23px;
+		padding-bottom: 25px;
+	}
+
+	.brands__item {
+		margin: 30px 18px;
+	}
+
+	.brands__item:first-child {
+		margin-left: 18px;
+	}
+
+	.container_5 {
+		display: none;
+	}
+
+	.menu--footer {
+		display: none;
+	}
+
+	.design {
+		padding-top: 42px;
+	}
 
 
-
-
-
-
-
+}
 
 
 
 
 }
+
 
 
 
