@@ -198,6 +198,7 @@ body {
 	line-height: 24px;
 	font-size: 18px;
 	color: white;
+	text-shadow: 0px 1px 0px #ffffff;
 }
 
 .slider__img {
@@ -340,6 +341,7 @@ body {
 	padding: 29px 0 0 40px;
 	font-family:  'League Gothic', Tahoma, sans-serif;
 	font-size: 30px;
+	text-shadow: 0px 1px 0px #ffffff;
 }
 
 .testimonials__title span {
@@ -395,6 +397,7 @@ body {
 	padding: 30px 0 7px 0;
 	font-family:  'League Gothic', Tahoma, sans-serif;
 	font-size: 30px;
+	text-shadow: 0px 1px 0px #ffffff;
 }
 
 .updates__upd {
@@ -457,29 +460,6 @@ body {
 	display: block;
 	height: 65px;
 	width: 70px;
-	background: url(../img/logos.png);
-}
-
-.brands__link--2 {
-	background-position: -135px 0;
-}
-
-.brands__link--3 {
-	background-position: -270px 0;
-}
-
-.brands__link--4 {
-	background-position: -400px 0;
-}
-
-.brands__link--5 {
-	width: 105px;
-	background-position: -525px 0;
-}
-
-.brands__link--6 {
-	width: 78px;
-	background-position: -697px 0;
 }
 
 /*CONTAINER_5*/
@@ -534,6 +514,7 @@ body {
 
 .prefooter__box--copyright .prefooter__title span {
 	color: #bcbcbc;
+	text-shadow: 1px 1px 3px #fff;
 }
 
 .prefooter__box--copyright .prefooter__text {

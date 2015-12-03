@@ -1,0 +1,15 @@
+.slider_bg {
+	/*clear: both;*/
+	background: rgb(0,0,0);	
+	filter: alpha(Opacity=20);
+}
+
+.selector__item {
+	background-color: rgb(0, 0, 0);
+	filter: alpha(Opacity=30);
+
+}
+
+.about--music {
+	margin-right: 0;
+}
