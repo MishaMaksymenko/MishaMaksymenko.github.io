@@ -13,6 +13,9 @@ if ( checkUser(currentUser) ) {
 function createUsersList() { //Создает список из 5 пользователей
 	for (var i = 0; i < 5; i++) {
 	  var newUser = prompt('Введите имя нового пользователя');
+	  while (newUser == null) {
+	  	var newUser = prompt('Введите корректное имя нового пользователя');
+	  }
 	  users.push(newUser);
 	}
 }
