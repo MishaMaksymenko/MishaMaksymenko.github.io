@@ -44,7 +44,7 @@ var body = document.body;
 
 var wrapper = test.createElement({
 	tagName: 'div',
-	className: 'wrapper',
+	className: 'container',
 	parentElement: body
 });
 
