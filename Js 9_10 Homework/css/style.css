@@ -1,0 +1,342 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*Carousel*/
+
+.jcarousel-box {
+    position: relative;
+	width: 640px;
+    height: 480px;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 10px solid #fff;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    width: 640px;
+}
+
+.jcarousel li img {
+	width: 100%;
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+	position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-prev {
+	left: -50px;
+}
+
+.jcarousel-next {
+	right: -50px;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+	margin: 10px 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+
+/*Selectbox*/
+
+.sbHolder {
+	background-color: #2d2d2d;
+	border: solid 1px #515151;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 30px;
+	position: relative;
+	width: 200px;
+	margin: 50px auto;
+}
+
+.sbSelector  {
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 170px;
+}
+
+.sbSelector:link,
+.sbSelector:visited,
+.sbSelector:hover {
+	color: #EBB52D;
+	outline: none;
+	text-decoration: none;
+}
+
+.sbToggle {
+	background: url(../img/select-icons.png) 0 -116px no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+
+.sbToggle:hover {
+	background: url(../img/select-icons.png) 0 -167px no-repeat;
+}
+
+.sbToggleOpen {
+	background: url(../img/select-icons.png) 0 -16px no-repeat;
+}
+
+.sbToggleOpen:hover {
+	background: url(../img/select-icons.png) 0 -66px no-repeat;
+}
+
+.sbHolderDisabled {
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+
+.sbOptions {
+	background-color: #212121;
+	border: solid 1px #515151;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 200px;
+	z-index: 1;
+	overflow-y: auto;
+}
+
+.sbOptions li {
+	padding: 0 7px;
+}
+
+.sbOptions a {
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+
+.sbOptions a:link,
+.sbOptions a:visited {
+	color: #ddd;
+	text-decoration: none;
+}
+
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus {
+	color: #EBB52D;
+}
+
+.sbOptions li.last a {
+	border-bottom: none;
+}
+
+.sbOptions .sbDisabled {
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+
+.sbOptions .sbGroup {
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+
+.sbOptions .sbSub {
+	padding-left: 17px;
+}
+
+.forms {
+	width: 400px;
+	margin: 50px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.form_type {
+	line-height: 30px;
+}
+
+/*CheckBox JQuery*/
+.Form_JQuery,
+.Form_CSS {
+	float: left;
+	position: relative;
+	width: 150px;
+	margin: 0 18px;
+	border: 2px solid grey;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.niceCheckBox {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox_unchecked_Copy.png) 0% 50%;
+}
+
+.niceCheckBox input {
+	display: none;
+}
+
+/*CheckBox CSS*/
+.cssChekBox {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.Form_CSS label:before {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox_unchecked_Copy.png);
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+
+.Form_CSS input:checked + label:before {
+	background: url(../img/checkbox_checked_Copy.png);
+}
+
+.Form_CSS input:disabled + label:before {
+	background: url(../img/checkbox_disabled_Copy.png);
+}
+
+
+/*Navigation*/
+nav {
+	background: rgb(255,100,100);
+}
+
+.sub_menu {
+	display: none;
+	width: 180px;
+	position: absolute;
+	background: rgb(225,75,75);
+}
+
+nav>ul>li {
+	float: left;
+}
+
+nav ul li {
+	list-style: none;
+	position: relative;
+}
+
+nav a {
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+	padding: 0 30px;
+	color: white;
+}
+
+nav a:hover {
+	color: black;
+}
+
+.dropdown img {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+}
+
+nav li li ul {
+	position: absolute;
+	top: 0;
+	left: 180px;
+	margin: 0;
+}
+
+.space_box {
+	height: 600px;
+	background: grey;
+}
+
+
+

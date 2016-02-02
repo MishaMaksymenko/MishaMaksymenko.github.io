@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hw 9_10</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/jquery.jcarousel.js.js"></script>
+	<script src="js/jquery.selectbox-0.2.js"></script>
+	<script src="js/jquery.color.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="jcarousel-box">
+	    <div class="jcarousel">
+	        <ul>
+	        	<li><img src="img/casa-penedo-portugal_93376_990x742.jpg" alt=""></li>
+	            <li><img src="img/bear-road-denali_93621_990x742.jpg" alt=""></li>
+        		<li><img src="img/dhaka-train-ngpc2015_92840_990x742.jpg" alt=""></li>
+        		<li><img src="img/spiti-prayer-flags_93629_990x742.jpg" alt=""></li>
+	            <li><img src="img/slovenia-paddleboarding_93177_990x742.jpg" alt=""></li>
+	        </ul>
+	    </div>
+	    <a class="jcarousel-prev" href="#">‹</a>
+	    <a class="jcarousel-next" href="#">›</a>
+    	<div class="jcarousel-pagination"></div>
+    </div>
+
+	<select name="country_id" id="country_id" tabindex="1">
+		<option value="">-- Select country --</option>
+		<optgroup label="North America">
+			<option value="1">USA</option>
+			<option value="9">Canada</option>
+		</optgroup>
+		<optgroup label="Europe">
+			<option value="2">France</option>
+			<option value="3">Spain</option>
+			<option value="6">Bulgaria</option>
+			<option value="7" disabled="disabled">Greece</option>
+			<option value="8">Italy</option>
+		</optgroup>
+		<optgroup label="Asia" disabled="disabled">
+			<option value="5">Japan</option>
+			<option value="11">China</option>
+		</optgroup>
+		<option value="4">Brazil</option>
+		<option value="10">South Africa</option>
+	</select>
+    
+	<div class="forms">
+	    <form action="#" class="Form_JQuery">
+		<p class="form_type">Form JQuery</p>
+	    	<div class="CheckBox">
+	    		<span class="niceCheckBox"><input type="checkbox" id="Morocco"></span>
+	    		<label for="Morocco">Morocco</label>
+	    	</div>
+	    	<div class="CheckBox">
+	    		<span class="niceCheckBox"><input type="checkbox" id="Portugal" checked="true"></span>
+	    		<label for="Portugal">Portugal</label>
+	    	</div>
+	    	<div class="CheckBox">
+	    		<span class="niceCheckBox"><input type="checkbox" id="Spain" checked="true" disabled></span>
+	    		<label for="Spain">Spain</label>
+	    	</div>
+	    </form>
+
+	    <form action="#" class="Form_CSS">
+		<p class="form_type">Form CSS</p>
+	    	<div>
+	    		<input class="cssChekBox" type="checkbox" id="India">
+	    		<label for="India">India</label>
+	    	</div>
+	    	<div>
+	    		<input class="cssChekBox" type="checkbox" id="Nepal" checked="true">
+	    		<label for="Nepal">Nepal</label>
+	    	</div>
+	    	<div>
+	    		<input class="cssChekBox" type="checkbox" id="China" checked="true" disabled>
+	    		<label for="China">China</label>
+	    	</div>
+	    </form>
+    </div>
+
+    <nav>
+    	<ul class="menu clearfix">
+    		<li><a href="">Nav 1</a></li>
+    		<li><a href="">Nav 2</a></li>
+    		<li class="dropdown"><a href="">Nav 3<img src="img/triangle.png" alt=""></a>
+    			<ul class="sub_menu">
+    				<li><a href="">Nav 3.1</a></li>
+    				<li><a href="">Nav 3.2</a></li>
+    				<li><a href="">Nav 3.3</a></li>
+    				<li class="dropdown"><a href="">Nav 3.4<img src="img/triangle_right.png" alt=""></a>
+    					<ul class="sub_menu">
+    						<li><a href="">Nav 3.4.1</a></li>
+    						<li class="dropdown"><a href="">Nav 3.4.2<img src="img/triangle_right.png" alt=""></a>
+    							<ul class="sub_menu">
+    								<li><a href="">Nav 3.4.2.1</a></li>
+    								<li><a href="">Nav 3.4.2.2</a></li>
+    								<li><a href="">Nav 3.4.2.3</a></li>
+    								<li><a href="">Nav 3.4.2.4</a></li>
+    								<li><a href="">Nav 3.4.2.5</a></li>
+    							</ul>
+    						</li>
+    						<li><a href="">Nav 3.4.3</a></li>
+    						<li><a href="">Nav 3.4.4</a></li>
+    						<li><a href="">Nav 3.4.5</a></li>
+    					</ul>
+    				</li>
+    				<li><a href="">Nav 3.5</a></li>
+    			</ul>
+    		</li>
+    		<li><a href="">Nav 4</a></li>
+    		<li><a href="">Nav 5</a></li>
+    	</ul>
+    </nav>
+    <div class="space_box"></div>
+</body>
+</html>
