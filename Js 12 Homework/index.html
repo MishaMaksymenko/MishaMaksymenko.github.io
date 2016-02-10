@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hw12</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<script type="text/html" id="profile">
+		<div class="wrapper">
+
+			<p class="header"><%= name %></p>
+			<div class="img"><img src=<%= img %> alt=""></div>
+			<p class="bottom_line">Выпускник <%= university %></p>
+
+			<div class="box">
+			<p>Хочу учить фронтенд, потому что:</p>
+			<ul class="bottom_line">
+				<% for ( var i = 0; i < reasons.length; i++ ) { %>
+					<li><%= reasons[i] %></li>
+				<% } %>
+			</ul>
+
+			<p>Мой контактный телефон <br>
+			<%= phone %></p>
+
+			<p class="bottom_line">Мой профиль в фейсбук <br>
+			<a href=<%= fb_link %> target="blank">facebook</a></p>
+			
+			<p>Мой фидбек: <br>
+			<%= feed %></p>
+			</div>
+
+		</div>
+	</script>
+</body>
+</html>

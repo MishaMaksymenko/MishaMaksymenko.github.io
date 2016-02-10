@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+/*Carousel*/
+
+.carousel-box {
+    position: relative;
+    width: 640px;
+    margin: 100px auto;
+}
+
+.carousel-hider {
+	position: relative;
+    overflow: hidden;
+	margin: 50px auto;
+    width: 600px;
+}
+
+.carousel-list {
+	position: relative;
+	width: 10000px;    
+    list-style: none;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    position: absolute;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.carousel-arrow-left {
+  left: -50px;
+}
+
+.carousel-arrow-right {
+  right: -50px;
+}
