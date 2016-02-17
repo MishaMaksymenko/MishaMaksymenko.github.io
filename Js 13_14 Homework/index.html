@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<script type="text/html" id="test">
+		<div class="container">
+			<h1>Тест по программированию</h1>
+			<form action="#">
+				<% for ( var i = 0; i < data.length; i++ ) { %>
+					<h2><%= (i+1)+ ". " + data[i].question%></h2>
+						<div class="radio">
+							<label>
+								<input type="radio" name=<%= "Q" + i %>>
+								<%= data[i].variants[0]%>
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name=<%= "Q" + i %>>
+								<%= data[i].variants[1]%>		
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name=<%= "Q" + i %>>
+								<%= data[i].variants[2]%>		
+							</label>
+						</div>
+				<% } %>
+				<button type="submit" class="btn btn-default" id="check" >Проверить мои результаты</button>
+			</form>
+		</div>
+	</script>
+
+	<script type="text/html" id="modal">
+		<div class="test-modal modal-content">
+			<p class="modal-title">Результаты теста:</p>
+			<p class="modal-body">Правильных ответов <%= correctAnswers %> из <%= questionsAmount %></p>
+			<button class="btn btn-default" id="again">Пройти тест заново</button>
+		</div>
+	</script>
+</body>
+</html>
