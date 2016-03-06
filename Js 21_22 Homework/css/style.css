@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.test-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.test-modal {
+    position: fixed;
+    height: 200px;
+    width: 500px;
+    /*background: red;*/
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -250px;
+}
+
+.modal-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.modal-body {
+    text-align: center;   
+}
+
+#back-to-test {
+    margin: 10px 180px; 
+
+}
+
+#again {
+    margin: 10px  0 0 180px; 
+}
