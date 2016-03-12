@@ -1,6 +1,6 @@
 define(
 	'controller',
-	['jquery'],
+	[],
 	function() {
 		function Controller(model, view) {
 

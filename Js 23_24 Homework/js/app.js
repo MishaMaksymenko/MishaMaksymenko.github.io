@@ -12,8 +12,10 @@ require(
 	],
 
 	function(model, view, controller) {
-		var model_1 = new model.init(['make Homework', 'buy Chocolate', 'watch StarWars']);
-		var view_1 = new view.init(model_1);
-		var controller_1 = new controller.init(model_1, view_1);
+		$(function(){
+			var model_1 = new model.init(['make Homework', 'buy Chocolate', 'watch StarWars']);
+			var view_1 = new view.init(model_1);
+			var controller_1 = new controller.init(model_1, view_1);
+		});
 	}
 );

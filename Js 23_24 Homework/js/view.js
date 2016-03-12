@@ -1,6 +1,6 @@
 define(
 	'view',
-	['tmpl','jquery'],
+	['tmpl'],
 	function() {
 		function View(model) {
 			var self = this;
