@@ -49,7 +49,7 @@ var timer = {
         var self = this;
 
         this.timerId = setInterval(function() {
-            ms++;
+            ms = +ms + 4;
 
             if (ms === 1000) {
                 s++;
