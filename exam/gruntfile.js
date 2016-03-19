@@ -7,15 +7,19 @@ module.exports = function(grunt) {
                 options: {
                     separator: ';',
                 },
-                {src: ['js/src/*.js'], dest: 'js/dist/built.js'},
-                {src: ['js/src/IE_8/*.js'], dest: 'js/dist/IE_8.built.js'},
+                 files: [
+                    {src: ['js/src/*.js'], dest: 'js/dist/built.js'},
+                    {src: ['js/src/IE_8/*.js'], dest: 'js/dist/IE_8.built.js'},
+                ],
             },
           },
 
         uglify: {
             js: {
-                {src: 'js/dist/built.js', dest: 'js/dist/built.min.js'},
-                {src: 'js/dist/IE_8.built.js', dest: 'js/dist/IE_8.built.min.js'},
+                 files: [
+                    {src: 'js/dist/built.js', dest: 'js/dist/built.min.js'},
+                    {src: 'js/dist/IE_8.built.js', dest: 'js/dist/IE_8.built.min.js'},
+                ],
             }
         },
 

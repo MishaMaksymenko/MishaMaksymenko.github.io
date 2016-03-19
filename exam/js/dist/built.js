@@ -1233,7 +1233,7 @@ $(function() {
   //   	customDirectionNav: $(".custom-navigation a")
 	});
 
-	// getImages();
+	getImages();
 	masonry();
 
 	$('#activ-search').on('submit', function(e){
