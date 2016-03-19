@@ -1220,6 +1220,7 @@ function getImages(request) {
 		var result = xhr.responseText;
 		result = JSON.parse(result)
 		console.log(result);
+		alert(result);
 		var images = result.images;
 		var content = tmpl(html, {data:images});
 		
@@ -1264,7 +1265,7 @@ $(function() {
 		$('#activ-search').on('submit', starter)
 	} catch (err) {
 		element.attachEvent("onsubmit", starter);
-		alert('test!IE9');
+		// alert('test!IE9');
 	}
 
 	// $('#activ-search').on('submit', function(e){
