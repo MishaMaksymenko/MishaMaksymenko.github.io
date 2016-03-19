@@ -7,20 +7,44 @@ function masonry() {
 }
 
 function getImages(request) {
-	$.ajax({
-		url: 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=m',
-		dataType : "json",
-		success: function (data) {
-			// console.log('data', data.images)
-			var html = $('#images').html();
-			var images = data.images;
-			var content = tmpl(html, {data:images});
+	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+	var xhr = new XHR();
+
+	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=tb', true);
+
+	xhr.onload = function() {
+		var html = $('#images').html();
+		var result = xhr.responseText;
+		result = JSON.parse(result)
+		console.log(result);
+		var images = result.images;
+		var content = tmpl(html, {data:images});
+		
+		$('.grid').remove();
+		$('.activities__field').append(content);
+		masonry();
+	}
+
+	xhr.onerror = function() {
+		alert( 'Ошибка ' + this.status );
+	}
+
+	xhr.send();
+
+	// $.ajax({
+	// 	url: 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=m',
+	// 	dataType : "json",
+	// 	success: function (data) {
+	// 		// console.log('data', data.images)
+	// 		var html = $('#images').html();
+	// 		var images = data.images;
+	// 		var content = tmpl(html, {data:images});
 			
-			$('.grid').remove();
-			$('.activities__field').append(content);
-			masonry();
-		}
-	});
+	// 		$('.grid').remove();
+	// 		$('.activities__field').append(content);
+	// 		masonry();
+	// 	}
+	// });
 }
 
 $(function() {
@@ -34,16 +58,9 @@ $(function() {
 	masonry();
 
 	try {
-
 		$('#activ-search').on('submit', starter)
-
-	// код ...
-
 	} catch (err) {
-
 		element.attachEvent("onsubmit", starter);
-	// обработка ошибки
-
 	}
 
 	// $('#activ-search').on('submit', function(e){
