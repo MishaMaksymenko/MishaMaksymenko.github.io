@@ -1259,6 +1259,8 @@ $(function() {
   //   	customDirectionNav: $(".custom-navigation a")
 	});
 
+	alert('IE9-');
+
 	getImages();
 	masonry();
 
