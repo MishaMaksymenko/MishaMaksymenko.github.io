@@ -9,6 +9,7 @@ function masonry() {
 function getImages(request) {
 	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 	var xhr = new XHR();
+	alert(XHR);
 
 	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=m', true);
 
@@ -58,26 +59,26 @@ $(function() {
 	getImages();
 	masonry();
 
-	try {
-		$('#activ-search').on('submit', starter)
-	} catch (err) {
-		element.attachEvent("onsubmit", starter);
-		// alert('test!IE9');
-	}
+	// try {
+	// 	$('#activ-search').on('submit', starter)
+	// } catch (err) {
+	// 	element.attachEvent("onsubmit", starter);
+	// 	// alert('test!IE9');
+	// }
 
-	// $('#activ-search').on('submit', function(e){
-		// e.preventDefault();
+	// // $('#activ-search').on('submit', function(e){
+	// 	// e.preventDefault();
 		
-	function starter(e) {
-		// console.log('e=',e);
+	// function starter(e) {
+	// 	// console.log('e=',e);
 
-		if (e.preventDefault) {
-			e.preventDefault();
-		} else {
-			e.returnValue = false;
-		}
-		request = $( "input" ).val();
-		getImages(request);
-	}
+	// 	if (e.preventDefault) {
+	// 		e.preventDefault();
+	// 	} else {
+	// 		e.returnValue = false;
+	// 	}
+	// 	request = $( "input" ).val();
+	// 	getImages(request);
+	// }
 	// });
 });
