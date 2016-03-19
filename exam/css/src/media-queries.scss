@@ -1,0 +1,287 @@
+@media screen and (min-width: 768px) {
+
+/*Promo*/
+
+.wrapper--promo {
+	padding: 39px 0 234px;
+}
+
+header {
+	/*padding: 0 50px;*/
+}
+
+.logo {
+	float: left;
+	margin-left: 50px;
+	padding-top: 0;
+	line-height: 32px;
+}
+
+.user-id {
+	position: static;
+	float: right;
+	margin: 0 50px 0 0;
+}
+
+.promo__title {
+	width: 490px;
+	margin: 138px auto 30px;
+	font-size: 52px;
+	line-height: 62px;
+}
+
+.promo__subtitle {
+	font-size: 24px;
+	width: 400px;	
+}
+
+.promo__button {
+	margin: 37px auto 0;
+	width: 225px;
+}
+
+/*How To*/
+
+.how__title {
+	padding-top: 92px;
+	padding-bottom: 32px;
+	font-size: 22px;
+}
+
+.how__item {
+	float: left;
+	margin: 0;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 33.3%;
+	height: 400px;
+}
+
+.caption {
+	width: 80%;
+	left: 28px;
+}
+
+/*Partners*/
+
+.partners__title {
+	padding-top: 98px;
+	padding-bottom: 11px;
+	letter-spacing: 0.2px;
+}
+
+.partners__list {
+	width: 512px;
+	margin: 0 auto;
+}
+
+.partners__title {
+	width: 100%;
+}
+
+.partner {
+	float: left;
+	margin: 20px 18px 0;
+}
+
+.partners__button {
+	margin-top: 67px;
+	width: 188px;
+}
+
+/*Activities*/
+
+.activities__title {
+	padding-top: 98px;
+	padding-bottom: 22px;
+	width: 100%;
+}
+
+.activities__field {
+	margin-top: 0;
+}
+
+/*test*/
+
+.grid {
+	width: 100%;
+}
+
+.grid-sizer {
+	width: 33.3%;
+}
+
+.grid-item {
+	box-sizing: border-box;
+	width: 33.3%;
+	height: 330px;
+	padding: 10px;	
+}
+
+/*.grid-item--with2 {
+	width: 66.6%;
+}*/
+
+.grid-item:nth-child(6),
+.grid-item:nth-child(7) {
+	width: 66.6%;
+}
+
+.grid-caption {
+	width: 90%;
+	font-size: 24px;
+	top: 152px;
+	left: 14px;
+}
+
+/*test*/
+
+
+/*Activ-search*/
+
+.activ-search__title {
+	width: 100%;
+	padding-top: 86px;
+	padding-bottom: 22px;
+}
+
+.activ-search__subtitle {
+	margin: 10px auto 40px;
+}
+
+.activ-search__form {
+	width: 412px;
+	margin: 0 auto 100px;
+}
+
+.activ-search__in {
+	float: left;
+	width: 210px;
+}
+
+.activ-search__sub {
+	float: left;
+	width: 160px;
+	margin: 0 0 0 10px;
+}
+
+.activ-search__sub:hover {
+	text-decoration: underline;
+}
+
+
+/*Footer*/
+
+.wrapper--footer {
+	padding: 36px 0;
+	text-align: left;
+}
+
+.footer__title {
+	float: left;
+	margin: 0 82px 0 40px;
+	line-height: 20px;
+}
+
+.footer__block {
+	float: left;
+	margin: 0;
+	width: 172px;	
+}
+
+.footer__subtitle {
+	line-height: 18px;
+}
+
+.footer__menu {
+	margin-top: 10px;
+}
+
+.footer__item {
+	float: none;
+}
+
+.footer__link {
+	padding: 0;
+	line-height: 24px;
+}
+
+.footer__design {
+	float: right;
+	width: 120px;
+	margin-top: 0px;
+	margin-right: 35px;
+	span {
+		margin-left: 35px;
+	}
+}
+
+}
+
+
+
+@media screen and (min-width: 960px) {
+
+header,
+section,
+footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Promo*/
+
+header {
+	/*padding: 0 10px;*/
+}
+
+.logo {
+	margin-left: 10px;
+}
+
+.user-id {
+	margin-right: 10px;
+}
+
+/*How To*/
+
+.how__item {
+	padding: 0 10px;
+	box-sizing: content-box;
+	width: 300px;
+}
+
+/*Partners*/
+
+.partners__list {
+	width: 100%;
+}
+
+.partner {
+	float: left;
+	margin: 20px 10px 0;
+}
+
+.partners__button {
+	margin-top: 32px;
+}
+
+.activ-search__subtitle {
+	margin-top: 12px;
+}
+
+/*Footer*/
+
+.footer__title {
+	margin: 0 96px 0 10px;
+}
+
+.footer__block {
+	width: 160px;	
+}
+
+.footer__design {
+	margin-right: 5px;
+}
+
+}
