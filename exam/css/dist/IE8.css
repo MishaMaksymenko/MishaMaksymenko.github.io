@@ -1,5 +1,5 @@
 .footer__block {
-  width: 260px; }
+  width: 290px; }
 
 @media screen and (min-width: 768px) {
   .promo__title {
@@ -9,6 +9,6 @@
     width: 100%; }
 
   .footer__design span {
-    margin-left: 10px; } }
+    margin-left: 0; } }
 
 /*# sourceMappingURL=IE8.css.map */
