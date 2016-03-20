@@ -25,15 +25,18 @@ module.exports = function(grunt) {
 
         cssmin: {
             css: {
-                src: 'css/dist/style.css',
-                dest: 'css/dist/style.min.css'
+                files: [
+                    {src: 'css/dist/style.css', dest: 'css/dist/style.min.css'},
+                    {src: 'css/dist/IE8.css', dest: 'css/dist/IE8.min.css'},
+                ],
             }
         },
 
         sass: {
             dist: {
                 files: {
-                'css/dist/style.css': 'css/src/style.scss'
+                'css/dist/style.css': 'css/src/style.scss',
+                'css/dist/IE8.css': 'css/src/IE8.scss',
                 }
             }
         },
