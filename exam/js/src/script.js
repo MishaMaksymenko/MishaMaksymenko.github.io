@@ -15,7 +15,7 @@ function getImages(request) {
 	xhr.onload = function() {
 		var html = $('#images').html();
 		var result = xhr.responseText;
-		result = JSON.parse(result)
+		result = JSON.parse(result);
 		var images = result.images;
 		var content = tmpl(html, {data:images});
 		
