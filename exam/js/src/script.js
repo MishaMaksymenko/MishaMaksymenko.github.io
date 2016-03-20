@@ -35,7 +35,11 @@ $(function() {
 	getImages();
 
 	$('#activ-search').on('submit', function(e){
-		e.preventDefault();
+		if (e.preventDefault) {
+			e.preventDefault();
+		} else {
+			e.returnValue = false;
+		}
 		request = $( "input" ).val();
 		getImages(request);
 	});
