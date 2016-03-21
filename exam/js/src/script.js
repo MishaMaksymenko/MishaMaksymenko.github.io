@@ -1,4 +1,4 @@
-function masonry() {
+function launchMasonry() {
 	$('.grid').masonry({
 		itemSelector: '.grid-item',
 		columnWidth: '.grid-sizer',
@@ -21,7 +21,7 @@ function getImages(request) {
 		
 		$('.grid').remove();
 		$('.activities__field').append(content);
-		masonry();
+		launchMasonry();
 	}
 
 	xhr.send();
