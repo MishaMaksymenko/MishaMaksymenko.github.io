@@ -35,7 +35,7 @@ $(function() {
 		} else {
 			e.returnValue = false;
 		}
-		request = $( "input" ).val();
+		var request = $('.activ-search__in').val();
 		getImages(request);
 	});
 });
