@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Masonry IE test</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+
+	<div class="activities__field clearfix">
+		
+
+
+		<script type="text" id="images">
+			<div class="grid">
+				<div class="grid-sizer"></div>
+
+				<% for ( var i = 0; i < data.length; i++ ) { %>
+				<div class="grid-item">
+					<div class="grid-wrapper">
+						<img src=<%= data[i].imageurl %> alt=<%= data[i].word %>>
+						<p class="grid-caption"><%= data[i].word %></p>
+					</div>
+				</div>
+				<% } %>
+			</div>
+		</script>
+	
+	</div>
+	<section class="activ-search">
+			<h3 class="activ-search__title">Discover holiday activity ideas</h3>
+			<p class="activ-search__subtitle">Hi! What are your holiday interests?</p>
+			<form class="activ-search__form clearfix" action="" id="activ-search">
+				<input class="activ-search__in" type="text" placeholder="Enter your interests">
+				<input class="activ-search__sub" type="submit" value="Search partners">
+			</form>
+		</section>
+</body>
+</html>
