@@ -8,11 +8,11 @@
    }
 
 .grid-sizer {
-  width: 33.3%; }
+  width: 33%; }
 
 .grid-item {
     /*box-sizing: border-box;*/
-    width: 30.3%;
+        width: 33%;}
     /*height: 330px;*/
     /*padding: 10px; }*/
 
@@ -27,20 +27,21 @@
   /*overflow: hidden;*/
   /*border-radius: 4px; */
 }
-/* img {
-    min-width: 100%;
-    min-height: 100%; }*/
 
-.grid-caption {
+ img {
+    min-width: 100%;
+    min-height: 100%; }
+
+/*.grid-caption {
   position: absolute;
-  /*overflow: auto;*/
+  overflow: auto;
   top: 40%;
   left: 25px;
   width: 250px;
   height: 50px;
   font-size: 24px;
-  /*text-align: center;*/
-  /*text-transform: capitalize;*/
+  text-align: center;
+  text-transform: capitalize;
   color: #fff; }
 
   .grid-caption {
@@ -48,3 +49,4 @@
     font-size: 24px;
     top: 152px;
     left: 14px; }
+*/
