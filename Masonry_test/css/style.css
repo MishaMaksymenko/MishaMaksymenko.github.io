@@ -4,7 +4,7 @@
 
 .grid {
   /*width: 300px;*/
-  /*margin: 0 auto; }*/}
+  margin: 0 auto; }
 
 .grid-sizer {
   width: 33.3%; }
@@ -27,9 +27,8 @@
   /*border-radius: 4px; */
 }
  img {
-    /*min-width: 100%;*/
-    /*min-height: 100%; }*/
-  }
+    min-width: 100%;
+    min-height: 100%; }
 
 .grid-caption {
   position: absolute;
