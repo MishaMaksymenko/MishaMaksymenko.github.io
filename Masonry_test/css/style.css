@@ -4,7 +4,7 @@
 
 .grid {
   /*width: 300px;*/
-  margin: 0 auto; }
+  /*margin: 0 auto; }*/
 
 .grid-sizer {
   width: 33.3%; }
@@ -12,8 +12,8 @@
 .grid-item {
     /*box-sizing: border-box;*/
     width: 30.3%;
-    height: 330px;
-    padding: 10px; }
+    /*height: 330px;*/
+    /*padding: 10px; }*/
 
 /*  .grid-sizer:first-child + * + * + * + * + *,
   .grid-sizer:first-child + * + * + * + * + * + * {
@@ -27,8 +27,9 @@
   /*border-radius: 4px; */
 }
  img {
-    min-width: 100%;
-    min-height: 100%; }
+    /*min-width: 100%;*/
+    /*min-height: 100%; }*/
+  }
 
 .grid-caption {
   position: absolute;
