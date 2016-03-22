@@ -63,6 +63,6 @@ $(function() {
 		}
 		// var actitity = $('.activ-search__in').val();
 		// getImages(actitity);
-		// getImages();
+		getImages();
 	});
 });
