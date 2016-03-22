@@ -47,7 +47,7 @@ function getImages(word) {
 
 $(function() {
 
-	getImages();
+	// getImages();
 
 	$('#activ-search').on('submit', function(e){
 		if (e.preventDefault) {
