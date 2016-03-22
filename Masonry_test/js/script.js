@@ -13,7 +13,7 @@ function getImages(word) {
 		var images_data = JSON.parse(result);
 		// console.log(result);
 		// console.log(images_data);
-		var images = images_data.images;
+		var images = result.images;
 		// console.log(images);
 
 		var content = tmpl(html, {data:images});
