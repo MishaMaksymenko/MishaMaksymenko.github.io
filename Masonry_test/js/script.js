@@ -61,8 +61,8 @@ $(function() {
 		} else {
 			e.returnValue = false;
 		}
-		var actitity = $('.activ-search__in').val();
-		getImages(actitity);
+		// var actitity = $('.activ-search__in').val();
+		// getImages(actitity);
 		// getImages();
 	});
 });
