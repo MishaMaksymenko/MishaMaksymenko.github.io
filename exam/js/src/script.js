@@ -1,22 +1,18 @@
-function launchIsotope() {
+function launchMasonry() {
 
 	$('.grid').isotope({
 		itemSelector: '.grid-item',
-		layoutMode: 'masonry',
 		percentPosition: true,
-		masonry: {
-			columnWidth: '.grid-sizer'
-		}
+		columnWidth: '.grid-sizer'
 	})
 }
 
 function getImages(request) {
 	var XHR = (window.XDomainRequest) ? XDomainRequest : XMLHttpRequest;
-	
 	// var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 	var xhr = new XHR();
 
-	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=tb', true);
+	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=tb' + Math.random(), true);
 
 	xhr.onload = function() {
 		var html = $('#images').html();
@@ -27,7 +23,7 @@ function getImages(request) {
 		
 		$('.grid').remove();
 		$('.activities__field').append(content);
-		launchIsotope();
+		launchMasonry();
 	}
 
 	xhr.send();
