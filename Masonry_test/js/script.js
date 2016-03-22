@@ -4,7 +4,7 @@ function getImages(word) {
 	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 	var xhr = new XHR();
 
-	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb' + Math.random(), true);
+	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb' );
 
 	xhr.onload = function() {
 		var html = $('#images').html();
@@ -13,7 +13,7 @@ function getImages(word) {
 		var images_data = JSON.parse(result);
 		// console.log(result);
 		// console.log(images_data);
-		var images = result.images;
+		var images = images_data.images;
 		// console.log(images);
 
 		var content = tmpl(html, {data:images});
@@ -26,8 +26,11 @@ function getImages(word) {
 			percentPosition: true,
 		});
 	}
+	setTimeout(function () {
+    xdr.send();
+  }, 0);
 
-	xhr.send();
+	// xhr.send();
 
 	//  $.ajax({
 	// 	url: 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb',
