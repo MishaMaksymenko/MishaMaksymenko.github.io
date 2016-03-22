@@ -1,9 +1,13 @@
-function launchMasonry() {
-	$('.grid').masonry({
+function launchIsotope() {
+
+	$('.grid').isotope({
 		itemSelector: '.grid-item',
-		columnWidth: '.grid-sizer',
-		percentPosition: true
-	});
+		layoutMode: 'masonry',
+		percentPosition: true,
+		masonry: {
+			columnWidth: '.grid-sizer'
+		}
+	})
 }
 
 function getImages(request) {
@@ -21,7 +25,7 @@ function getImages(request) {
 		
 		$('.grid').remove();
 		$('.activities__field').append(content);
-		launchMasonry();
+		launchIsotope();
 	}
 
 	xhr.send();
@@ -40,7 +44,7 @@ $(function() {
 		} else {
 			e.returnValue = false;
 		}
-		request = $( "input" ).val();
+		var request = $( ".activ-search__in" ).val();
 		getImages(request);
 	});
 });
