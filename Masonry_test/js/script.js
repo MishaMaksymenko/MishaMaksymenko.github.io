@@ -4,7 +4,7 @@ function getImages(word) {
 	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 	var xhr = new XHR();
 
-	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb', true);
+	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word=estate&amount=7&size=tb', true);
 
 	xhr.onload = function() {
 		var html = $('#images').html();
