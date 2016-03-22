@@ -2,7 +2,7 @@
 
 function getImages(word) {
 	var XHR = ("onload" in new XDomainRequest()) ? XDomainRequest : XMLHttpRequest;
-	var xhr = new XHR();
+	var xhr = new XDomainRequest();
 
 	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb' );
 
