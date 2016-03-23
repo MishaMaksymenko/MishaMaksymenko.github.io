@@ -4419,11 +4419,7 @@ $(function() {
 	getImages();
 
 	$('#activ-search').on('submit', function(e){
-		if (e.preventDefault) {
-			e.preventDefault();
-		} else {
-			e.returnValue = false;
-		}
+		e.preventDefault();
 		var request = $( ".activ-search__in" ).val();
 		getImages(request);
 	});
