@@ -1,13 +1,13 @@
 
 
 function getImages(word) {
-	// var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 	// var XHR = (window.XDomainRequest) ? XDomainRequest : XMLHttpRequest;
 	// console.log(XHR);
 
-	// var xhr = new XHR();
+	var xhr = new XHR();
 
-	// xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb' + Math.random(), true);
+	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=tb' + Math.random(), true);
 
 	// xhr.onload = function() {
 	// }
