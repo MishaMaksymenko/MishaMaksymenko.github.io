@@ -12,12 +12,12 @@ function getImages(word) {
 	// xhr.onload = function() {
 	// }
 		var html = $('#images').html();
-		var result = {"images":[{"imageurl":"http://t3.gstatic.com/images?q=tbn:ANd9GcSubRXqPAhohZlJW38Rl-1p0P_mRc3vnKZWDV6QXmhf2OZKEuEiOTaH3vk","word":"estate"},{"imageurl":"http://t2.gstatic.com/images?q=tbn:ANd9GcR5o2FzXJUbPdk9XEb5onPp7hsrv-yQi7gJjoAgxG7e0IqZZjOjv-L9I7Y","word":"estate"},{"imageurl":"http://t1.gstatic.com/images?q=tbn:ANd9GcTEA1qw5qPtrwcs8WkfJz6JhvUJcTyWkGM7d9aINb1SmrZU4rxDNLSJXto","word":"estate"},{"imageurl":"http://t1.gstatic.com/images?q=tbn:ANd9GcQqSvmgQASh4wnU9dWOMuR-bPgLS59nt7Tp1QuKOLjZU5YBx9VFCwp7pc2N","word":"estate"},{"imageurl":"http://t3.gstatic.com/images?q=tbn:ANd9GcTUHZWj_PXBfqbV-Lza_O92Nbd_di3CXrSNB33SDs-kkedMkiqeU4ytfyA","word":"estate"},{"imageurl":"http://t0.gstatic.com/images?q=tbn:ANd9GcRiT8eDWrG-tMCAuQelcgF0RGZWnjVMj85SaxIMnsm-XfsOI9D8M05M5V8","word":"estate"},{"imageurl":"http://t1.gstatic.com/images?q=tbn:ANd9GcQVubQevIE5_gz8jc5v0O4FQJT7R0lYYZPSCVYE153wtCcFRHXfe63VPGA","word":"estate"}],"status":"success","count":7};
-		// var result = '' + this.responseText;
-		// var images_data = JSON.parse(result);
+		// var result = {"images":[{"imageurl":"http://t3.gstatic.com/images?q=tbn:ANd9GcSubRXqPAhohZlJW38Rl-1p0P_mRc3vnKZWDV6QXmhf2OZKEuEiOTaH3vk","word":"estate"},{"imageurl":"http://t2.gstatic.com/images?q=tbn:ANd9GcR5o2FzXJUbPdk9XEb5onPp7hsrv-yQi7gJjoAgxG7e0IqZZjOjv-L9I7Y","word":"estate"},{"imageurl":"http://t1.gstatic.com/images?q=tbn:ANd9GcTEA1qw5qPtrwcs8WkfJz6JhvUJcTyWkGM7d9aINb1SmrZU4rxDNLSJXto","word":"estate"},{"imageurl":"http://t1.gstatic.com/images?q=tbn:ANd9GcQqSvmgQASh4wnU9dWOMuR-bPgLS59nt7Tp1QuKOLjZU5YBx9VFCwp7pc2N","word":"estate"},{"imageurl":"http://t3.gstatic.com/images?q=tbn:ANd9GcTUHZWj_PXBfqbV-Lza_O92Nbd_di3CXrSNB33SDs-kkedMkiqeU4ytfyA","word":"estate"},{"imageurl":"http://t0.gstatic.com/images?q=tbn:ANd9GcRiT8eDWrG-tMCAuQelcgF0RGZWnjVMj85SaxIMnsm-XfsOI9D8M05M5V8","word":"estate"},{"imageurl":"http://t1.gstatic.com/images?q=tbn:ANd9GcQVubQevIE5_gz8jc5v0O4FQJT7R0lYYZPSCVYE153wtCcFRHXfe63VPGA","word":"estate"}],"status":"success","count":7};
+		var result = '' + this.responseText;
+		var images_data = JSON.parse(result);
 		// console.log(result);
 		// console.log(images_data);
-		var images = result.images;
+		var images = images_data.images;
 		// console.log(images);
 
 		var content = tmpl(html, {data:images});
