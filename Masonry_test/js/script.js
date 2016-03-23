@@ -1,8 +1,8 @@
 
 
 function getImages(word) {
-	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-	// var XHR = (window.XDomainRequest) ? XDomainRequest : XMLHttpRequest;
+	// var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+	var XHR = (window.XDomainRequest) ? XDomainRequest : XMLHttpRequest;
 	// console.log(XHR);
 
 	var xhr = new XHR();
