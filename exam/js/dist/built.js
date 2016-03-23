@@ -4382,10 +4382,10 @@ return Outlayer;
 
 ;function launchMasonry() {
 
-	$('.grid').isotope({
+	$('.grid').masonry({
+		columnWidth: '.grid-sizer',
 		itemSelector: '.grid-item',
 		percentPosition: true,
-		columnWidth: '.grid-sizer'
 	})
 }
 
