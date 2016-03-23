@@ -59,11 +59,11 @@ $(function() {
 	// getImages();
 
 	$('#activ-search').on('submit', function(e){
-		if (e.preventDefault) {
+		// if (e.preventDefault) {
 			e.preventDefault();
-		} else {
-			e.returnValue = false;
-		}
+		// } else {
+			// e.returnValue = false;
+		// }
 		// var actitity = $('.activ-search__in').val();
 		// getImages(actitity);
 		getImages();
