@@ -22,7 +22,7 @@ function getImages(request) {
 	// var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 	var xhr = new XHR();
 
-	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=s'  + Math.pow(), true);
+	xhr.open('GET', 'http://api.pixplorer.co.uk/image?word='+request+'&amount=7&size=s', true);
 
 	xhr.onload = function() {
 		var html = $('#images').html();
