@@ -1,6 +1,10 @@
 .footer__block {
   width: 230px; }
 
+.partner__img-wrapper {
+  position: relative;
+  z-index: -1; }
+
 @media screen and (min-width: 768px) {
   .promo__title {
     width: 600px; }

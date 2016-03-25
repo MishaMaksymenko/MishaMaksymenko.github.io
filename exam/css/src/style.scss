@@ -238,7 +238,7 @@ header {
 	width: 100%;
 }
 
-.partner__icon:after {
+.partner__icon:before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -248,19 +248,19 @@ header {
 	height: 40px;
 }
 
-.partner__icon--partner_1:after {
+.partner__icon--partner_1:before {
 	background: url(../../img/partner_1_icon.png);
 }
 
-.partner__icon--partner_2:after {
+.partner__icon--partner_2:before {
 	background: url(../../img/partner_2_icon.png);
 }
 
-.partner__icon--partner_3:after {
+.partner__icon--partner_3:before {
 	background: url(../../img/partner_3_icon.png);
 }
 
-.partner__icon--partner_4:after {
+.partner__icon--partner_4:before {
 	background: url(../../img/partner_4_icon.png);
 }
 
