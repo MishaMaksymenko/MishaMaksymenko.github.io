@@ -371,27 +371,30 @@ header {
 
 /*Pop -up*/
 
-.pop-up {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	line-height: 600px;
-	text-align: center;
-}
-
-.pop-up img {
-	vertical-align: middle;
-	max-width: 90%;
-	max-height: 90%;
-}
-
 .overlay {
 	position: fixed;
 	min-height: 100%;
 	width: 100%;
 	top: 0;
 	background: rgba(0, 0, 0, 0.9);
+}
+
+.pop-up {
+	/*position: static;*/
+	display: table;
+	/*top: 0;*/
+	width: 100%;
+	height: 100%;
+	/*line-height: 600px;*/
+	text-align: center;
+}
+
+.pop-up img {
+	display: table-cell;
+	vertical-align: middle;
+	/*display: inline-block;*/
+	max-width: 90%;
+	max-height: 90%;
 }
 
 /*Activ-search*/
