@@ -1,9 +1,25 @@
-.footer__block {
-  width: 230px; }
+.user-id__link:hover {
+  background: #ccc; }
 
 .partner__img-wrapper {
   position: relative;
   z-index: -1; }
+
+.partners__search:hover {
+  border: 2px solid #ccc;
+  background: #ccc; }
+
+.grid-wrapper img,
+.grid-wrapper .grid-caption {
+  position: relative;
+  z-index: -1; }
+
+.overlay {
+  background: black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
+
+.footer__block {
+  width: 230px; }
 
 @media screen and (min-width: 768px) {
   .promo__title {

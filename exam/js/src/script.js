@@ -10,7 +10,7 @@ function launchMasonry() {
 function popUp() {
 	var $body = $('body');
 	var imgUrl = $(this).find('img').attr('src');
-	var $popUp = $('<div class="overlay"><div class="pop-up"><img src="' +  imgUrl +'" alt=""></div></div>');
+	var $popUp = $('<div class="overlay"><div class="pop-up"><span class="helper"></span><img src="' +  imgUrl +'" alt=""></div></div>');
 	$body.append($popUp);
 	$popUp.one('click', function() {
 		$popUp.remove();
