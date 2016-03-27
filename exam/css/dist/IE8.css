@@ -9,11 +9,6 @@
   border: 2px solid #ccc;
   background: #ccc; }
 
-/*.grid-wrapper img,
-.grid-wrapper .grid-caption {
-	position: relative;
-	z-index: -1;
-}*/
 .overlay {
   background: black;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; }
