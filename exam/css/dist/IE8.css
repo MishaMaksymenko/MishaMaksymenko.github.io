@@ -10,11 +10,7 @@
   background: #ccc; }
 
 .overlay {
-  background: black;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; }
-
-.pop-up img {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+  background: black; }
 
 .footer__block {
   width: 230px; }

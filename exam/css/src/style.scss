@@ -370,6 +370,7 @@ header {
 
 .grid-wrapper:hover .grid-gradient {
 	background: none;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 );
 }
 
 .grid-caption {
