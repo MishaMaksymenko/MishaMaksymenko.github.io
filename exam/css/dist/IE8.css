@@ -9,14 +9,17 @@
   border: 2px solid #ccc;
   background: #ccc; }
 
-.grid-wrapper img,
+/*.grid-wrapper img,
 .grid-wrapper .grid-caption {
-  position: relative;
-  z-index: -1; }
-
+	position: relative;
+	z-index: -1;
+}*/
 .overlay {
   background: black;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; }
+
+.pop-up img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
 
 .footer__block {
   width: 230px; }

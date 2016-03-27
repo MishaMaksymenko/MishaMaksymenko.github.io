@@ -13,15 +13,19 @@
 	background: #ccc;
 }
 
-.grid-wrapper img,
+/*.grid-wrapper img,
 .grid-wrapper .grid-caption {
 	position: relative;
 	z-index: -1;
-}
+}*/
 
 .overlay {
 	background: rgb(0, 0, 0);
  	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.pop-up img {
+ 	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .footer__block {
