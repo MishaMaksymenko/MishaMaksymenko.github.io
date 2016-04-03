@@ -557,9 +557,9 @@ header {
   font-weight: 300;
   color: #333; }
 
-.activ-search__in:focus {
-  /*outline: 1px solid $theme-color;*/ }
-
+/*.activ-search__in:focus {
+	outline: 1px solid $theme-color;
+}*/
 .activ-search__sub {
   display: block;
   width: 280px;
