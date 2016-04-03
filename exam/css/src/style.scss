@@ -332,6 +332,7 @@ header {
 	width: 100%;
 	height: 100%;
 	border-radius: 4px;
+	cursor: pointer;
 	
 	img {
 		min-width: 100%;
@@ -447,14 +448,14 @@ header {
 	width: 250px;
 	height: 38px;
 	border: 1px solid #ccc;
-	outline: none;
+	/*outline: none;*/
 	border-radius: 5px;
 	@include roboto;
 	color: #333;
 }
 
 .activ-search__in:focus {
-	outline: 1px solid $theme-color;
+	/*outline: 1px solid $theme-color;*/
 }
 
 .activ-search__sub {
