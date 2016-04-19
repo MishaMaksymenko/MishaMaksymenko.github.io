@@ -61,6 +61,7 @@ header {
 
 .menu-mobile {
 	display: block;
+	float: left;
 	position: relative;
 	width: 24px;
 	height: 30px;
@@ -103,6 +104,113 @@ header {
 	/*width: 180px;*/
 	padding-left: 
 }
+
+/*Filter mobile*/
+
+.filter-mobile {
+	display: block;
+	position: relative;
+	float: right;
+	position: relative;
+	width: 24px;
+	height: 30px;
+	background: url(../img/filter.png) no-repeat;
+}
+
+.filter-mobile:hover .filter-mobile__wrapper {
+display: block;
+}
+
+.filter-mobile__wrapper {
+	display: none;
+	position: absolute;
+	top: 26px;
+	right: 0;
+	width: 220px;
+	padding: 10px;
+	border: 1px solid #979797;
+	background: #fff;
+	z-index: 1;
+}
+
+.filter-main__title {
+	margin-left: 20px;
+	text-transform: uppercase;
+	line-height: 30px;
+	color: #979797;
+}
+
+.filter-main__title {
+	margin: 0 0 10px 0;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	font-size: 14px;
+}
+
+.filter-main__block--price {
+	border: none;
+	height: 50px;
+	color: #979797;
+}
+
+.filter-main__price {
+	line-height: 26px;
+	width: 60px;
+	text-align: center;
+	border: 1px solid #979797;
+	font-size: 14px;
+}
+
+.filter-main__title--price {
+	border: none;
+	margin: 0;
+}
+
+
+/*Create Account*/
+
+.account {
+	right: 50%;
+	margin-right: -120px;
+}
+
+/*Account Login*/
+
+.account--login {
+	width: 220px;
+	margin-right: -130px;
+
+}
+
+.account__block {
+	float: none;
+	text-align: center;
+}
+
+.account__block--manual {
+	padding-left: 0;
+	padding-bottom: 20px;
+	width: 220px;
+
+}
+
+.account__block--social {
+	margin-top: 0;
+	padding-top: 0;
+	width: 220px;
+	border: none;
+	border-top: 1px solid #eee;
+}
+
+.account__button {
+	margin: 30px auto 0;
+}
+
+
+.account__separator {
+	display: none;
+}
+
 
 /*Slider*/
 

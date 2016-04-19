@@ -121,7 +121,7 @@ header {
 
 .menu__link {
 	display: block;
-	line-height: 34px;
+	line-height: 40px;
 	padding: 0 5px;
 	text-decoration: none;
 	font-weight: bold;
@@ -162,14 +162,195 @@ header {
 	font-weight: normal;
 }
 
+.menu__link--sign-up:hover .account--create {
+	display: block;
+}
+
+.menu__link--login:hover .account--login {
+	display: block;
+}
+
 .menu-mobile {
 	display: none;
 }
 
+.filter-mobile {
+	display: none;
+}
+
+
+/*Create Account*/
+
+.account {
+	/*display: none;*/
+	position: absolute;
+	top: 40px;
+	right: 110px;
+	width: 200px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	background: #fff;
+	z-index: 1;
+}
+
+.account--create {
+	display: none;
+}
+
+.account__title {
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+}
+
+.account__form input {
+	width: 180px;
+	padding-left: 20px;
+	margin-top: 5px;
+	line-height: 40px;
+	background: #eee;
+	border-radius: 10px;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	outline: 0;
+}
+
+.account__form .account__check {
+	width: 20px;
+}
+
+.account__terms {
+	line-height: 50px;
+	font-size: 10px;
+	color: #000;
+}
+
+.account__form .account__submit {
+	width: 200px;
+	line-height: 34px;
+	padding-left: 0;
+	text-transform: uppercase;
+	background: #248cec;
+	color: #fff;
+}
+
+
+/*Account Login*/
+
+.account--login {
+	display: none;
+	right: 30px;
+	width: 600px;
+}
+
+.account__block {
+	width: 290px;
+}
+
+.account__block--social {
+	float: left;
+	padding-top: 20px;
+	margin-top: 25px;
+	border-right: 2px solid #eee;
+}
+
+.account__button {
+	display: block;
+	position: relative;
+	width: 140px;
+	padding-left: 60px;
+	margin-bottom: 30px;
+	line-height: 40px;
+	border-radius: 10px;
+	background: #3b5998;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+
+}
+
+.account__button--tw {
+	background: #1dcaff;
+}
+
+.account__button:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 14px;
+	width: 24px;
+	height: 24px;
+}
+
+.account__button--fb:before {
+	background: url(../img/facebook.png);	
+}
+
+.account__button--tw:before {
+	background: url(../img/twitter.png);	
+}
+
+.account__block--manual {
+	float: right;
+	width: 210px;
+	padding-left: 80px;
+}
+
+.account__remember {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.account__form .account__login {
+	width: 80px;
+	margin: 15px 0 10px 6px;
+}
+
+.account__variant {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+}
+
+.account__variant--now {
+	padding-right: 10px;
+	border-right: 1px solid #333;
+}
+
+.account__variant--forgot {
+	margin-left: 8px;
+}
+
+.account__variant:hover {
+	color: #248cec;
+}
+
+.account__separator {
+	position: absolute;
+	line-height: 50px;
+	width: 50px;
+	border-radius: 30px;
+	border: 1px solid #eee;
+	background: #fff;
+	top: 100px;
+	left: 50%;
+	margin-left: -35px;
+	text-align: center;
+	color: darkblue;
+}
+
+
 /*Main*/
 
 .wrapper--main {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #979797;
 }
 
 /*Slider*/
@@ -469,5 +650,5 @@ footer {
 	padding-left: 10px;
 	width: 240px;
 	line-height: 24px;
-	border: 1px solid #333;
+	/*border: 1px solid #333;*/
 }

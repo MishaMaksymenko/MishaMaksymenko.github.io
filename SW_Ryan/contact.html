@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Homepage</title>
+	<title>Contact Us</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="css/form.media-quries.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -34,36 +37,10 @@
 			<li class="menu__item"><a class="menu__link" href="kids.html">Kids</a></li>
 			<li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
 			<li class="menu__item"><a class="menu__link" href="brands.html">Brands</a></li>
-			<li class="menu__item menu__item--account">
-				<a class="menu__link menu__link--login" href="#">
-					Login
-					<!-- sample (onhover) | JS required -->
-					<div class="account account--login clearfix">
-						<div class="account__block account__block--manual">
-							<p class="account__title">Login manually</p>
-							<form action="#" class="account__form">
-								<input type="email" placeholder="Email">
-								<input type="text" placeholder="Password">
-								<label class="account__remember"><input type="checkbox" class="account__check">Remember me</label>
-								<input type="submit" value="Login" class="account__submit account__login">
-								<div class="account__options">
-									<p href="#" class="account__variant account__variant--now">Register now</p>
-									<p href="#" class="account__variant account__variant--forgot">Forgot password?</p>
-								</div>
-							</form>
-						</div>
-						<div class="account__block account__block--social">
-							<p href="#" class="account__button account__button--fb">Login with Facebook</p>
-							<p href="#" class="account__button account__button--tw">Login with Twitter</p>
-						</div>
-						<div class="account__separator">OR</div>
-					</div>
-				</a>
-			</li>
+			<li class="menu__item menu__item--account"><a class="menu__link menu__link--login" href="#">Login</a></li>
 			<li class="menu__item menu__item--account">
 				<a class="menu__link menu__link--sign-up" href="#">
 					Sign up
-					<!-- sample (onhover) | JS required -->
 					<div class="account account--create">
 						<p class="account__title">Create an account</p>
 						<form action="#" class="account__form">
@@ -139,90 +116,24 @@
 		</div>
 	</header>
 
-	<div class="wrapper wrapper--main">
-		<div class="slider">
-			<img class="slider__img" src="img/slider.jpg" alt="">
-		</div>
-
-		<form class="search" action="#">
-			<input class="search__input" type="text" placeholder="What are you looking for?">
-		</form>
-
-		<div class="actions clearfix">
-			<div class="action">
-				<a class="action__link" href="#">
-					<div class="action__img"><img  src="img/action_1.jpg" alt=""></div>
-					<span class="action__caption">Get your hipsta look on!</span>
-				</a>
+	<div class="wrapper wrapper--main wrapper--home">
+		<div class="container container--form">
+			<div class="page-title">Contact Us</div>
+			<div class="contacts contacts--form">
+				<span class="contacts__data contacts__data--phone contacts__data--form">Call - 000 - 000 - 0000</span>
+				<span class="contacts__data contacts__data--email contacts__data--form">Email - customerservice@snapwear.net</span>
 			</div>
-			<div class="action">
-				<a class="action__link" href="#">
-					<div class="action__img"><img  src="img/action_2.jpg" alt=""></div>
-					<span class="action__caption">Create your own designs</span>
-				</a>
-			</div>
-			<div class="action action--brands">
-				<a class="action__link" href="#">
-					<div class="action__img"><img  src="img/action_3.jpg" alt=""></div>
-					<span class="action__caption">Shop from our top brands</span>
-				</a>
-			</div>
-		</div>
-
-		<div class="fast-filter clearfix">
-			<a class="fast-filter__link fast-filter__link--best-sellers" href="#">Best sellers</a>
-			<a class="fast-filter__link fast-filter__link--new-arrivals" href="#">New arrivals</a>
-		</div>
-
-		<div class="products clearfix">
-			<div class="product">
-				<a class="product__link" href="#">
-					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
-					<span class="product__name">Name of the product</span>
-				</a>
-				<span class="product__designer">Designer's Name</span>
-				<span class="product__price"><span class="product__currensy">$</span>40</span>
-				<div class="product__action clearfix">
-					<a href="#" class="product__button product__button--wishlist">Wishlist</a>
-					<a href="#" class="product__button product__button--cart">Cart</a>
+			<form action="" class="page-form">
+				<p class="page-form__input-title">Name</p>
+				<input type="text" class="page-form__input">
+				<p class="page-form__input-title">Email Adress</p>
+				<input type="mail" class="page-form__input">
+				<p class="page-form__input-title">Inquiry</p>
+				<textarea name="" id="" cols="30" rows="10" class="page-form__textarea"></textarea>
+				<div class="page-form__submit-warapper">
+					<input type="submit" value="SUBMIT" class="page-form__submit">
 				</div>
-			</div>
-			<div class="product">
-				<a class="product__link" href="#">
-					<div class="product__img"><img src="img/product_2.jpg" alt=""></div>
-					<span class="product__name">Name of the product</span>
-				</a>
-				<span class="product__designer">Designer's Name</span>
-				<span class="product__price"><span class="product__currensy">$</span>40</span>
-				<div class="product__action clearfix">
-					<a href="#" class="product__button product__button--wishlist">Wishlist</a>
-					<a href="#" class="product__button product__button--cart">Cart</a>
-				</div>
-			</div>
-			<div class="product">
-				<a class="product__link" href="#">
-					<div class="product__img"><img src="img/product_3.jpg" alt=""></div>
-					<span class="product__name">Name of the product</span>
-				</a>
-				<span class="product__designer">Designer's Name</span>
-				<span class="product__price"><span class="product__currensy">$</span>40</span>
-				<div class="product__action clearfix">
-					<a href="#" class="product__button product__button--wishlist">Wishlist</a>
-					<a href="#" class="product__button product__button--cart">Cart</a>
-				</div>
-			</div>
-			<div class="product">
-				<a class="product__link" href="#">
-					<div class="product__img"><img src="img/product_4.jpg" alt=""></div>
-					<span class="product__name">Name of the product</span>
-				</a>
-				<span class="product__designer">Designer's Name</span>
-				<span class="product__price"><span class="product__currensy">$</span>40</span>
-				<div class="product__action clearfix">
-					<a href="#" class="product__button product__button--wishlist">Wishlist</a>
-					<a href="#" class="product__button product__button--cart">Cart</a>
-				</div>
-			</div>
+			</form>
 		</div>	
 	</div>
 

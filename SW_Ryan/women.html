@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Women</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/kids.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="css/home.media-queries.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper wrapper--info">
+		<div class="info clearfix">
+			<div class="contacts">
+				<span class="contacts__data contacts__data--phone">Call - 000 - 000 - 0000</span>
+				<span class="contacts__data contacts__data--email">Email - customerservice@snapwear.net</span>
+			</div>
+			<div class="cart-block clearfix">
+				<select class="cart-block__currency" name="" id="">
+					<option value="">USD</option>
+					<option value="">EUR</option>
+				</select>
+				<a href="#" class="cart-block__link cart-block__link--cart"></a>
+				<a href="#" class="cart-block__link cart-block__link--wish"></a>
+			</div>		
+		</div>
+	</div>
+
+	<header class="clearfix">
+		<div class="logo"><a class="logo__link" href="index.html"><img src="img/logo_sw.png" alt="" class="logo__img"></a></div>
+		<ul class="menu clearfix">
+			<li class="menu__item"><a class="menu__link" href="men.html">Men</a></li>
+			<li class="menu__item"><a class="menu__link" href="women.html">Women</a></li>
+			<li class="menu__item"><a class="menu__link" href="kids.html">Kids</a></li>
+			<li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+			<li class="menu__item"><a class="menu__link" href="brands.html">Brands</a></li>
+			<li class="menu__item menu__item--account"><a class="menu__link menu__link--login" href="#">Login</a></li>
+			<li class="menu__item menu__item--account">
+				<a class="menu__link menu__link--sign-up" href="#">
+					Sign up
+					<div class="account account--create">
+						<p class="account__title">Create an account</p>
+						<form action="#" class="account__form">
+							<input type="email" placeholder="Email">
+							<input type="text" placeholder="Password">
+							<input type="text" placeholder="Confirm Password">
+							<label class="account__terms"><input type="checkbox" class="account__check">I agree to the terms and conditions.</label>
+							<input type="submit" value="Create an account" class="account__submit">
+						</form>
+					</div>
+				</a>
+			</li>
+			<li class="menu__item menu__item--design"><a class="menu__link menu__link--design" href="#">Create your designs</a></li>
+		</ul>
+		
+		<div class="menu-mobile">
+			<ul class="menu menu--mobile">
+				<li class="menu__item menu__item--mobile"><a class="menu__link" href="men.html">Men</a></li>
+				<li class="menu__item menu__item--mobile"><a class="menu__link" href="women.html">Women</a></li>
+				<li class="menu__item menu__item--mobile"><a class="menu__link" href="kids.html">Kids</a></li>
+				<li class="menu__item menu__item--mobile"><a class="menu__link" href="home.html">Home</a></li>
+				<li class="menu__item menu__item--mobile"><a class="menu__link" href="brands.html">Brands</a></li>
+				<li class="menu__item menu__item--mobile menu__item--design"><a class="menu__link menu__link--design" href="#">Create your designs</a></li>
+				<li class="menu__item menu__item--mobile menu__item--account"><a class="menu__link menu__link--sign-up" href="#">Sign up</a></li>
+				<li class="menu__item menu__item--mobile menu__item--account"><a class="menu__link menu__link--login" href="#">Login</a></li>
+			</ul>
+		</div>
+		<div class="filter-mobile">
+			<div class="filter-mobile__wrapper">
+					<p class="filter-main__title">Product type</p>
+					<p class="filter-main__title filter-main__title--price">Price</p>
+					<div class="filter-main__block filter-main__block--price">
+						$ <input type="text" placeholder="from" class="filter-main__price"> - 
+						<input type="text" placeholder="to" class="filter-main__price">
+
+					</div>
+					<p class="filter-main__title">Sizes</p>
+					<p class="filter-main__title">Brands</p>
+					<p class="filter-main__title">Themes</p>
+			</div>
+		</div>
+
+		<div class="account account--create">
+			<p class="account__title">Create an account</p>
+			<form action="#" class="account__form">
+				<input type="email" placeholder="Email">
+				<input type="text" placeholder="Password">
+				<input type="text" placeholder="Confirm Password">
+				<label class="account__terms"><input type="checkbox" class="account__check">I agree to the terms and conditions.</label>
+				<input type="submit" value="Create an account" class="account__submit">
+			</form>
+		</div>
+
+		<div class="account account--login clearfix">
+			<div class="account__block account__block--manual">
+				<p class="account__title">Login manually</p>
+				<form action="#" class="account__form">
+					<input type="email" placeholder="Email">
+					<input type="text" placeholder="Password">
+					<label class="account__remember"><input type="checkbox" class="account__check">Remember me</label>
+					<input type="submit" value="Login" class="account__submit account__login">
+					<div class="account__options">
+						<a href="#" class="account__variant account__variant--now">Register now</a>
+						<a href="#" class="account__variant account__variant--forgot">Forgot password?</a>
+					</div>
+				</form>
+			</div>
+			<div class="account__block account__block--social">
+				<a href="#" class="account__button account__button--fb">Login with Facebook</a>
+				<a href="#" class="account__button account__button--tw">Login with Twitter</a>
+			</div>
+			<div class="account__separator">OR</div>
+		</div>
+	</header>
+
+	<div class="wrapper wrapper--main wrapper--home">
+		<div class="container">
+			
+			<div class="filter-main">
+				<div class="filter-main__section">
+					<p class="filter-main__title">Product type</p>
+					<div class="filter-main__block">
+						<div class="filter-main__check">
+							<label><input type="checkbox">Accessories</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Blankets</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Canvases</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Cofee mugs</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Duvet covers</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Pillow cases</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Pillows</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Shower curtains</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Towels</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Yoga mats</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter-main__section filter-main__section--size">
+					<p class="filter-main__title">Size</p>
+					<div class="filter-main__block filter-main__block--size">
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">XS</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">L</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">s</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">XL</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">M</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">XXL</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">3X</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">4X</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">5X</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">Single-sided</label>
+						</div>
+						<div class="filter-main__check filter-main__check--size">
+							<label><input type="checkbox">Double-sided</label>
+						</div>
+
+					</div>
+				</div>
+				<div class="filter-main__section filter-main__section--price">
+					<p class="filter-main__title">Price</p>
+					<div class="filter-main__block filter-main__block--price">
+						$ <input type="text" placeholder="from" class="filter-main__price"> - 
+						<input type="text" placeholder="to" class="filter-main__price">
+
+					</div>
+					
+				</div>
+				<div class="filter-main__section filter-main__section--brands">
+					<p class="filter-main__title">Brands</p>
+					<div class="filter-main__block filter-main__block--brands">
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Brand name</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter-main__section filter-main__section--theme">
+					<p class="filter-main__title">Theme</p>
+					<div class="filter-main__block filter-main__block--theme">
+						<div class="filter-main__check">
+							<label><input type="checkbox">Animal</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Art</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Cartoon</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Cats</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Food</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Gaming</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Nature</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Pop-culture</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Psychedelic</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Space</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Streetwear</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Zen</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Space</label>
+						</div>
+						<div class="filter-main__check">
+							<label><input type="checkbox">Space</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-block clearfix">
+				<div class="product-block__info">
+					<p class="product-block__results">Showing <span>32</span> of <span>178</span> Results</p>
+					<select class="product-block__selector" name="" id="">
+						<option value="">Popular</option>
+						<option value="">Newest</option>
+						<option value="">Sweet</option>
+					</select>
+				</div>
+				<div class="product">
+					<a class="product__link" href="#">
+						<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+						<span class="product__name">Name of the product</span>
+					</a>
+					<span class="product__designer">Designer's Name</span>
+					<span class="product__price"><span class="product__currensy">$</span>40</span>
+					<div class="product__action clearfix">
+						<a href="#" class="product__button product__button--wishlist">Wishlist</a>
+						<a href="#" class="product__button product__button--cart">Cart</a>
+					</div>
+				</div>
+				<div class="product">
+					<a class="product__link" href="#">
+						<div class="product__img"><img src="img/product_2.jpg" alt=""></div>
+						<span class="product__name">Name of the product</span>
+					</a>
+					<span class="product__designer">Designer's Name</span>
+					<span class="product__price"><span class="product__currensy">$</span>40</span>
+					<div class="product__action clearfix">
+						<a href="#" class="product__button product__button--wishlist">Wishlist</a>
+						<a href="#" class="product__button product__button--cart">Cart</a>
+					</div>
+				</div>
+				<div class="product">
+					<a class="product__link" href="#">
+						<div class="product__img"><img src="img/product_3.jpg" alt=""></div>
+						<span class="product__name">Name of the product</span>
+					</a>
+					<span class="product__designer">Designer's Name</span>
+					<span class="product__price"><span class="product__currensy">$</span>40</span>
+					<div class="product__action clearfix">
+						<a href="#" class="product__button product__button--wishlist">Wishlist</a>
+						<a href="#" class="product__button product__button--cart">Cart</a>
+					</div>
+				</div>
+				<div class="product">
+					<a class="product__link" href="#">
+						<div class="product__img"><img src="img/product_4.jpg" alt=""></div>
+						<span class="product__name">Name of the product</span>
+					</a>
+					<span class="product__designer">Designer's Name</span>
+					<span class="product__price"><span class="product__currensy">$</span>40</span>
+					<div class="product__action clearfix">
+						<a href="#" class="product__button product__button--wishlist">Wishlist</a>
+						<a href="#" class="product__button product__button--cart">Cart</a>
+					</div>
+				</div>
+				<ul class="pagination">
+					<li class="pagination__item"><a href="" class="pagination__link">1</a></li>
+					<li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+					<li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+					<li class="pagination__item"><a href="" class="pagination__link">4</a></li>
+					<li class="pagination__item"><a href="" class="pagination__link">5</a></li>
+					<li class="pagination__item"><a href="" class="pagination__link">6</a></li>
+					<li class="pagination__item"><a href="" class="pagination__link">7</a></li>
+				</ul>
+
+				
+			</div>
+		</div>
+	</div>
+
+	<footer class="clearfix">
+		<ul class="menu-footer menu-footer--about">
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">About Us</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="careers.html">Career</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="contact.html">Contact Us</a></li>
+		</ul>
+		<ul class="menu-footer menu-footer--refunds">
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Refunds and Exchanges</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Shipping</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Bulk Order</a></li>
+		</ul>
+		<ul class="menu-footer menu-footer--media">
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Media</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Terms of service</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Privacy Policy</a></li>
+		</ul>
+		<ul class="menu-footer menu-footer--chart">
+			<li class="menu-footer__item"><a class="menu-footer__link" href="#">Size Chart</a></li>
+			<li class="menu-footer__item"><a class="menu-footer__link" href="model.html">Model for us</a></li>
+		</ul>
+		<div class="join">
+			<div class="social">
+				<p class="social__title">Connect with us</p>
+				<a href="#" class="social__link social__link--fb"></a>
+				<a href="#" class="social__link social__link--tw"></a>
+			</div>
+			<div class="mailing">
+				<p class="mailing__title">Join our mailing list</p>
+				<form action="" class="mailing__form">
+					<input class="mailing__input" type="email" placeholder="email address">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

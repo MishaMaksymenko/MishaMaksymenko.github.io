@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+
+.container--form {
+	min-width: 260px;
+	width: 96%;
+}
+
+.page-form__input {
+	width: 70%;
+}
+
+.page-form__textarea {
+	width: 96%;
+}
+
+.page-form__submit-warapper {
+	text-align: center;
+}
+
+
+.contacts--form {
+	display: block;
+}
+
+
+
+
+
+}

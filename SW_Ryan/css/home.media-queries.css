@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+.wrapper--home,
+.wrapper--brands {
+	border-top: none;
+}
+
+.filter-main {
+	display: none;
+}
+
+.filter-mobile {
+	display: block;
+	position: relative;
+	float: right;
+	position: relative;
+	width: 24px;
+	height: 30px;
+	background: url(../img/filter.png) no-repeat;
+}
+
+.filter-mobile:hover .filter-mobile__wrapper {
+display: block;
+}
+
+.filter-mobile__wrapper {
+	display: none;
+	position: absolute;
+	top: 26px;
+	right: 0;
+	width: 220px;
+	padding: 10px;
+	border: 1px solid #979797;
+	background: #fff;
+	z-index: 1;
+}
+
+.filter-main__title {
+	margin: 0 0 10px 0;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	font-size: 14px;
+}
+
+.filter-main__title--price {
+	border: none;
+	margin: 0;
+}
+
+.container {
+	min-width: 260px;
+	width: 96%;
+}
+
+.product-block {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	min-width: 280px;
+}
+
+.product-block__info {
+	padding: 10px 0;
+}
+
+
+/*Brands*/
+
+.filter-barnds {
+	width: 70%;
+}
+
+.brands {
+	width: 96%;
+}
+
+.brand {
+	float: none;
+	width: 100%;
+	margin: 0 0 30px;
+}
+
+.brand__img {
+	overflow: hidden;
+	text-align: center;
+}
+
+/*Kids*/
+
+
+}

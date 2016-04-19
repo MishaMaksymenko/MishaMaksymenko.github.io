@@ -1,0 +1,90 @@
+.wrapper--brands {
+	border-top: 1px solid #979797;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+/*Filter-brands*/
+
+.filter-barnds {
+	width: 450px;
+	margin: 40px auto;
+}
+
+.filter-barnds__item {
+	float: left;
+	margin: 0 20px;
+}
+
+.filter-barnds__link {
+	display: block;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+}
+
+.filter-barnds__link:hover {
+	border-bottom: 2px solid #000;
+}
+
+
+/*Brand*/
+
+.brands {
+	width: 1230px;
+	margin: 0 auto;
+}
+
+.brand {
+	float: left;
+	width: 400px;
+	margin: 0 5px 10px;
+}
+
+.brand__link {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.brand__img {
+	height: 200px;
+	overflow: hidden;
+	/*background: green;*/
+}
+
+.brand__caption {
+	display: block;
+	line-height: 50px;
+	font-weight: bold;
+	color: #000;
+}
+
+.pagination {
+	margin: 30px 0 60px;
+	text-align: center;
+}
+
+.pagination__item {
+	display: inline-block;
+	/*margin: 0 5px;*/
+}
+
+.pagination__link {
+	display: block;
+	text-decoration: none;
+	font-size: 10px;
+	color: #979797;
+	width: 16px; 
+	line-height: 16px;
+	border-radius: 16px;
+}
+
+.pagination__link:hover {
+	background: grey;
+	color: #fff;
+}

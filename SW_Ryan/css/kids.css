@@ -1,0 +1,8 @@
+.filter-main__block--size {
+	height: 120px;
+}
+
+.filter-main__check--size {
+	float: left;
+	min-width: 30%;`
+}
