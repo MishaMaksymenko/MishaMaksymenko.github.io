@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic);
-@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
+/*@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic);*/
+/*@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);*/
 /*@import url(https://fonts.googleapis.com/css?family=Marck+Script);*/
 /*@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);*/
 
@@ -10,7 +10,8 @@
 }
 
 body {
-	font-family: 'Lato', Verdana, sans-serif;
+	font-family: Arial, sans-serif;
+	/*font-family: 'Lato', Verdana, sans-serif;*/
 	/*font-family: 'Montserrat', sans-serif;*/
 }
 
@@ -23,6 +24,11 @@ section * {
 	box-sizing: content-box;
 }
 
+section h1,
+section h2 {
+	margin: 0;
+}
+
 .wrapper--gradient {
 	background: linear-gradient(180deg,#fff 1%,#ededed);
 }
@@ -30,7 +36,7 @@ section * {
 /*Hero section*/
 
 .hero {
-	padding: 60px 0 80px 0;
+	padding: 80px 0;
 }
 
 .help {
@@ -40,25 +46,27 @@ section * {
 }
 
 .help__title {
-	line-height: 120px;
+	line-height: 80px;
 	font-size: 45px;
 }
 
 .help__caption {
+	width: 300px;
 	line-height: 30px;
-	font-size: 22px;
+	font-size: 20px;
+	color: #333;
 }
 
 .help__button {
 	display: block;
-	margin: 30px 0 20px 10px;
+	margin: 30px 0 20px 0px;
 	width: 280px;
 	text-align: center;
 	line-height: 50px;
 	font-size: 22px;
 	font-weight: bold;
 	text-decoration: none;
-	color: #82777D;
+	color: #3d3d3d;
 	border-radius: 5px;
 	border: 1px solid #F28C2E;
 	background: #FCD62F;
@@ -66,6 +74,8 @@ section * {
 
 .help__button:hover {
 	background: #F9DC68;
+	color: #3d3d3d;
+	text-decoration: none;
 }
 
 .help__info {
@@ -81,9 +91,9 @@ section * {
 	position: absolute;
 	top: 0;
 	left: 90px;
-	width: 48px;
+	width: 60px;
 	height: 24px;
-	background: url(../img/word.png) 28px 0 no-repeat, url(../img/outlook.png) 0 0 no-repeat;
+	background: url(../img/word.png) 36px 0 no-repeat, url(../img/outlook.png) 0 0 no-repeat;
 	background-size: 24px auto;
 }
 
@@ -92,14 +102,15 @@ section * {
 	width: 400px;
 	padding-left: 60px;
 	background: #fff;
-	padding-top: 40px;
+	padding-top: 20px;
+	margin-top: 20px;
 	font-family: Verdana, sans-serif;
 	font-size: 26px;
 }
 
 .calculator__title {
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	line-height: 40px;
 	padding-left: 30px;
 	text-transform: uppercase;
@@ -117,28 +128,28 @@ section * {
 }
 
 .calculator__form {
-	padding: 10px 0 20px 0;
+	padding: 10px 0;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
 
 .calculator__selector {
 	position: relative;
-	font-size: 18px;
+	font-size: 14px;
 	color: #007f00;
-	line-height: 50px;
+	line-height: 40px;
 	text-transform: uppercase;
 }
 
 .calculator__select,
 .calculator__pages {
 	position: absolute;
-	top: 8px;
+	top: 4px;
 	right: 8px;
 	width: 200px;
-	height: 36px;
+	height: 30px;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #000;
 }
 
@@ -155,7 +166,12 @@ section * {
 
 
 .calculator__total {
-	padding: 10px 0;
+	padding: 5px 0;
+}
+
+.calculator__sign,
+.calculator__money-amount {
+	color: #F28C2E;
 }
 
 .calculator__price {
@@ -180,14 +196,15 @@ section * {
 
 .calculator__button:hover {
 	color: #333;
+	text-decoration: none;
 }
 
 /*Grammar section*/
 
-.grammarly {
-	padding: 60px 0 160px;
+.essayplus {
+	padding: 60px 0 120px;
 	background: url(../img/grammar.png) no-repeat;
-	background-size: 410px auto;
+	background-size: 320px auto;
 	background-position: 100% 40%;
 	border-bottom: 1px solid #eee;
 }
@@ -205,6 +222,7 @@ section * {
 	line-height: 24px;
 	font-size: 18px;
 	font-weight: 300;
+	color: #333;
 }
 
 .article__info {
@@ -227,23 +245,25 @@ section * {
 	background: url(../img/info.png);
 }
 
-.grammarly__img {
-	float: left;
-	width: 440px;
-}
-
-.grammarly__img img {
-	width: 100%;
-}
-
-
 /*Spell-check section*/
 
 .spell-check {
-	padding: 60px 0 160px;
+	position: relative;
+	padding: 60px 0 120px;
+}
+
+.spell-check:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: -20px;
+	width: 580px;
+	height: 360px;
 	background: url(../img/mail.png) no-repeat;
-	background-size: 560px auto;
-	background-position: 0% 30%;
+	background-size: 580px auto;
+	/*background-position: 0% 30%;*/
+	box-shadow: 0px 0px 20px 0px rgba(173,171,173,1);
 }
 
 .article--spell {
@@ -334,12 +354,15 @@ section * {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #e04f42;
-    box-shadow: inset 0 -1px 0 #de210d,inset 0 1px 0 #ea6756;
+    background-color: #FCD62F;
+    /*background: #FCD62F;*/
+    /*box-shadow: inset 0 -1px 0 #de210d,inset 0 1px 0 #ea6756;*/
 }
 
 .steps__button:hover {
-	background: linear-gradient(180deg,#ea6756 0,#d0352c);
+	background: #F9DC68;
+	text-decoration: none;
+	/*background: linear-gradient(180deg,#ea6756 0,#d0352c);*/
 }
 
 /*Matter section*/
@@ -367,6 +390,7 @@ section * {
 	font-weight: 300;
 	line-height: 24px;
 	margin-bottom: 40px;
+	color: #333;
 }
 
 /*Interested section*/
@@ -410,11 +434,12 @@ section * {
 	font-size: 16px;
 	line-height: 30px;
 	text-decoration: none;
-	color: #00aced;
+	color: #0087ba;
 }
 
 .block__link:hover {
-	color: #0078a5;
+	color: #004864;
+	text-decoration: none;
 }
 
 .block__title--small {
@@ -439,7 +464,7 @@ section * {
 	line-height: 40px;
 	text-decoration: none;
 	font-size: 18px;
-	color: #00aced;
+	color: #0087ba;
 	background: linear-gradient(180deg,#fff 1%,#ededed);
 	border: 1px solid #ddd;
 	border-radius: 5px;
@@ -447,22 +472,24 @@ section * {
 
 .block__button:hover {
 	background: linear-gradient(360deg,#fff 1%,#ededed);
+	text-decoration: none;
 }
 
 .block__account {
 	text-decoration: none;
-	color: #00aced;
+	color: #0087ba;
 }
 
 .block__account:hover {
-	color: #0078a5;
+	color: #004864;
 }
 
 
 /*Testimonials section*/
 
 .wrapper--testimonials {
-	background: #194252;
+	/*background: #194252;*/
+	background: #13323e;
 }
 
 .testimonials {
@@ -472,7 +499,7 @@ section * {
 .testimonials__title {
 	font-size: 36px;
 	line-height: 120px;
-	color: #a3b3b9;
+	color: #c0cbcf;
 	text-align: center;
 }
 
@@ -564,7 +591,7 @@ section * {
 
 .assignment__title {
 	line-height: 180px;
-	font-family: 'Tangerine', cursive, Verdana;
+	font-family: 'Tangerine', cursive;
 	font-size: 64px;
 	text-align: center;
 }
