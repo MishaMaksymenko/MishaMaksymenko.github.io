@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-queries.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<meta name="robots" content="noindex, nofollow"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,35 +22,52 @@
 			</div>
 			<div class="calculator">
 				<p class="calculator__title">Calculate the Price</p>
-				<form action="#" class="calculator__form">
+				<form action="#" id="calculator" class="calculator__form">
 					<p class="calculator__selector">Academic level
-						<select name="" id="" class="calculator__select">
-							<option value="">Master</option>
-							<option value="">Master</option>
-							<option value="">Master</option>
+						<select name="level" id="level" class="calculator__select">
+							<option value="0">High School</option>
+							<option value="1">Undergrad. (yrs 1-2)</option>
+							<option value="2">Undergrad. (yrs 3-4)</option>
+							<option value="3">Master's</option>
+							<option value="4">Doctoral</option>
 						</select>
 					</p>
 					<p class="calculator__selector">Type of paper
-						<select name="" id="" class="calculator__select">
+						<select name="" id="type" class="calculator__select">
+							<option value="">Essay (any type)</option>
+							<option value="">Editing</option>
+							<option value="">Admission essay</option>
+							<option value="">Argumentative essay</option>
+							<option value="">Bibliography</option>
+							<option value="">Book/movie review</option>
+							<option value="">Business plan</option>
+							<option value="">Case study</option>
+							<option value="">Dissertation</option>
 							<option value="">Literature review</option>
-							<option value="">Literature review</option>
-							<option value="">Literature review</option>
+							<option value="">Presentation on speech</option>
+							<option value="">Research paper</option>
+							<option value="">Term paper</option>
 						</select>
 					</p>
 					<p class="calculator__selector">Deadline
-						<select name="" id="" class="calculator__select">
-							<option value="">14 Days</option>
-							<option value="">14 Days</option>
-							<option value="">14 Days</option>
+						<select name="term" id="term" class="calculator__select">
+							<option value="0">1 month</option>
+							<option value="1">14 days</option>
+							<option value="2">7 days</option>
+							<option value="3">5 days</option>
+							<option value="4">3 days</option>
+							<option value="5">48 hours</option>
+							<option value="6">24 hours</option>
+							<option value="7">8 hours</option>
 						</select>
 					</p>
 					<p class="calculator__selector">Pages
-						<input type="text" class="calculator__pages">
+						<input type="number" name="page" class="calculator__pages">
 					</p>
-					<p class="calculator__words-total"><span class="alculator__words-amount">1375</span> words in total</p>
+					<p class="calculator__words-total"><span class="alculator__words-amount" id="words-amount">275</span> words in total</p>
 				</form>
 				<div class="calculator__total clearfix">
-					<p class="calculator__price">Total price:  <span class="calculator__sign">$</span><span class="calculator__money-amount">70</span></p>
+					<p class="calculator__price">Total price:  <span class="calculator__sign">$</span><span class="calculator__money-amount" id="total-amount">8</span></p>
 					<a href="https://essayplus.com/order" class="calculator__button">Order Now</a>
 				</div>
 			</div>
@@ -76,6 +94,20 @@
 			<div class="article article--survey">
 				<h2 class="article__title article__title--survey">Backed by Research & Millions of Users</h2>
 				<p class="article__text article__text--survey">Grammarly conducted a student survey that demonstrated the following:</p>
+			</div>
+			<div class="progress-bar clearfix">
+				<div id="circle_1" class="circle">
+					<strong>99<i>%</i></strong>
+					<span>99% reported improved writing grades</span>
+				</div>
+				<div id="circle_2" class="circle">
+					<strong>97<i>%</i></strong>
+					<span>97% customer satisfaction</span>
+				</div>
+				<div id="circle_3" class="circle">
+					<strong>99<i>%</i></strong>
+					<span>99% timely delivery</span>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -138,20 +170,66 @@
 	<div class="wrapper wrapper--testimonials">
 		<section class="testimonials">
 			<h2 class="testimonials__title">What our customers say</h2>
-			<div class="testimonials__item clearfix">
-				<div class="testimonials__feed-block">
-					<p class="testimonials__caption">Customer feedback 
-						<span class="testimonials__stars"> &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;  10</span >
-						<span class="testimonials__rate"> / 10</span>
-					</p>
-					<p class="testimonials__feed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptates quas consequuntur sequi ab?</p>
-				</div>
-				<div class="testimonials__add-block">
-					<p class="testimonials__tags">basic needs, emotional needs, physical needs</p>
-					<p class="testimonials__essay">Essay (any type), 1 page.</p>
-					<p class="testimonials__id">ID55851900</p>
-					<p class="testimonials__user">Writer <span class="testimonials__username">maleficent</span></p>
-				</div>
+
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="testimonials__item clearfix">
+							<div class="testimonials__feed-block">
+								<p class="testimonials__caption">Customer feedback 
+									<span class="testimonials__stars"> &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;  10</span >
+									<span class="testimonials__rate"> / 10</span>
+								</p>
+								<p class="testimonials__feed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptates quas consequuntur sequi ab?</p>
+							</div>
+							<div class="testimonials__add-block">
+								<p class="testimonials__tags">basic needs, emotional needs, physical needs</p>
+								<p class="testimonials__essay">Essay (any type), 1 page.</p>
+								<p class="testimonials__id">ID55851900</p>
+								<p class="testimonials__user">Writer <span class="testimonials__username">maleficent</span></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonials__item clearfix">
+							<div class="testimonials__feed-block">
+								<p class="testimonials__caption">Customer feedback 
+									<span class="testimonials__stars"> &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;  9</span >
+									<span class="testimonials__rate"> / 10</span>
+								</p>
+								<p class="testimonials__feed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptates quas consequuntur sequi ab?</p>
+							</div>
+							<div class="testimonials__add-block">
+								<p class="testimonials__tags">basic needs, emotional needs, physical needs</p>
+								<p class="testimonials__essay">Essay (any type), 1 page.</p>
+								<p class="testimonials__id">ID55851900</p>
+								<p class="testimonials__user">Writer <span class="testimonials__username">maleficent</span></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonials__item clearfix">
+							<div class="testimonials__feed-block">
+								<p class="testimonials__caption">Customer feedback 
+									<span class="testimonials__stars"> &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;  9</span >
+									<span class="testimonials__rate"> / 10</span>
+								</p>
+								<p class="testimonials__feed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptates quas consequuntur sequi ab?</p>
+							</div>
+							<div class="testimonials__add-block">
+								<p class="testimonials__tags">basic needs, emotional needs, physical needs</p>
+								<p class="testimonials__essay">Essay (any type), 1 page.</p>
+								<p class="testimonials__id">ID55851900</p>
+								<p class="testimonials__user">Writer <span class="testimonials__username">maleficent</span></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="custom-navigation">
+				<a href="#" class="flex-prev"></a>
+				<div class="custom-controls-container"></div>
+				<a href="#" class="flex-next"></a>
 			</div>
 		</section>
 	</div>
@@ -162,5 +240,9 @@
 			<a href="https://essayplus.com/order" class="assignment__button">Order Now</a>
 		</section>
 	</div>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/circle-progress.js"></script>
+	<script src="js/jquery.appear.js"></script>
 </body>
 </html>
