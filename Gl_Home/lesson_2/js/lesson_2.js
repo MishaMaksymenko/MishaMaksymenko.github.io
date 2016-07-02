@@ -26,3 +26,29 @@ function createLogger(prefix) {
 
 var myLogger = createLogger('My Logger');
 myLogger('some data');
+
+function test(a) {
+	this.bbb = function inner(b) {
+		console.log(a + b);
+	}
+
+	return function() {this.bbb()}
+}
+
+// var res = test(5);
+// res(7);
+
+
+var calculator1 = {
+    value: 'I am calculator 1',
+    add: function () {
+	return this.value;
+    },
+};
+
+var calculator2 = {
+    value: 'I am calculator 2'
+};
+
+calculator2.add = calculator1.add;
+calculator1.add();
