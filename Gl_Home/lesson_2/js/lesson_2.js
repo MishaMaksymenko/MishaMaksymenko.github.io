@@ -24,6 +24,10 @@ function createLogger(prefix) {
 	return new Function('data','console.log(new Date().toISOString() + " " + pref  + ": " + data)');
 }
 
+
+
+// tests
+
 var myLogger = createLogger('My Logger');
 myLogger('some data');
 

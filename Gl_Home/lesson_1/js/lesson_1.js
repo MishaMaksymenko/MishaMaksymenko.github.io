@@ -14,11 +14,11 @@ function array(array, logicArg) {
 	var result;
 
 	if (logicArg === true) {
-		result = Math.max.apply(Math, array);
+		result = Math.max.apply(null, array);
 	} 
 
 	if (logicArg === false) {
-		result = Math.min.apply(Math, array);
+		result = Math.min.apply(null, array);
 	}
 	console.log(result);
 }
@@ -63,8 +63,16 @@ function division(a, b) {
 }
 
 function lastDigits(a, b) {
-	var result1 = a % 10;
-	var result2 = b % 10;
+	function floats(a) {
+		var arr = String(a).split('.');
+		if (arr[1]) {
+			return a * Math.pow(10, arr[1].length);
+		}
+		return a
+	}
+
+	var result1 = floats(a) % 10;
+	var result2 = floats(b) % 10;
 
 	if (result1 === result2) {
 		console.log("Last digits are equal")
@@ -133,6 +141,10 @@ function vampire(number) {
 	var len = arr.length;
 	var lenRest = len % 2;
 
+	function compareNumbers(a, b) {
+		return a - b;
+	}
+
 	if (lenRest === 0) {
 		var composition = 0;
 		var index = len/2;
@@ -157,8 +169,8 @@ function vampire(number) {
 					var newArr = fang1.concat(fang2);
 					// console.log(fang1,fang2);
 					// console.log(newArr);
-					var arrSort = arr.sort().join(',');
-					var newArrSort = newArr.sort().join(',');
+					var arrSort = arr.sort(compareNumbers).join(',');
+					var newArrSort = newArr.sort(compareNumbers).join(',');
 					// console.log(a);
 					// console.log(b);
 					if (arrSort == newArrSort) {
