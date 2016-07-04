@@ -14,45 +14,19 @@ function extractCharacters(str) {
 }
 
 function createLogger(prefix) {
-	this.pref = prefix;
+	
+	function login (data) {
+		var d = new Date().toISOString();
+		console.trace(d, prefix, data);
+		// console.log(d, prefix, data);
+	}
 
-	// return function (data) {
-	// 	var d = new Date().toISOString();
-	// 	console.log(d + " " + pref  + ": " + data);
-	// }
-
-	return new Function('data','console.log(new Date().toISOString() + " " + pref  + ": " + data)');
+	return login;
 }
-
-
-
-// tests
 
 var myLogger = createLogger('My Logger');
 myLogger('some data');
 
-function test(a) {
-	this.bbb = function inner(b) {
-		console.log(a + b);
-	}
-
-	return function() {this.bbb()}
-}
-
-// var res = test(5);
-// res(7);
 
 
-var calculator1 = {
-    value: 'I am calculator 1',
-    add: function () {
-	return this.value;
-    },
-};
 
-var calculator2 = {
-    value: 'I am calculator 2'
-};
-
-calculator2.add = calculator1.add;
-calculator1.add();
