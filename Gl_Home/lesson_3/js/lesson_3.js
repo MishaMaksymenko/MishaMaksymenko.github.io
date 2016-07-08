@@ -9,9 +9,11 @@ var dog = new Dog();
 compareObjects(cat, dog, 'age')
 
 function compareObjects(obj1, obj2, property) {
-	if (obj1[property] >= obj2[property]) { console.log(obj1.name) };
+	var obj;
+	if (obj1[property] >= obj2[property]) { obj = obj1 };
 	// in case if property is not common
-	if (obj1[property] <= obj2[property]) {	console.log(obj2.name) }; 
+	if (obj1[property] <= obj2[property]) {	obj = obj2 };
+	console.log(obj.name);
 }
 
 function Dog() {
