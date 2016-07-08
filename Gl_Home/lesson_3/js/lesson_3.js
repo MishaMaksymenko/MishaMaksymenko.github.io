@@ -21,12 +21,15 @@ function Dog() {
 
 
 // Favorite song
-var songs = [{name: 'One Dance', played: 7}, {name: 'Cant Stop The Feeling!', played: 21}, {name: 'Panda', played: 2}, {name: 'Dont Let Me Down', played: 4}, {name: 'This Is What You Came For', played: 4}]
+var songs = [{name: 'One Dance', played: 7}, {name: 'Cant Stop The Feeling!', played: 21}, {name: 'Panda', played: 42}, {name: 'Dont Let Me Down', played: 4}, {name: 'This Is What You Came For', played: 4}]
 
 function favoriteSong(songs) {
+	var favoriteSong = songs[0];
+	var index = 0;
 	songs.forEach(function(item, i, arr) {
-		console.log('Song Name: ' + item.name + ', Played ' + item.played + ' times, Song index: ' + i)
+		if (favoriteSong.played < item.played) { favoriteSong = item; index = i }
 	});
+	console.log('My favorite song is "' + favoriteSong.name + '", Played ' + favoriteSong.played + ' times, Song index: ' + index)
 }
 
 // Calculator
