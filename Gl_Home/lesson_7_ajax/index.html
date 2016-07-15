@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Heroes</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+    <script type="text/javascript" src="js/lesson_7.js"></script>
+</head>
+<body>
+	<h1>Star Wars Heroes</h1>
+	<div class="hero hero--img">
+		<div class="hero__img"><img src="img/user.png" alt=""></div>
+		<div class="hero__btn-block">
+			<button class="hero__btn hero__btn--prev hero__btn--disabled"><span>Prev</span></button>
+			<button class="hero__btn hero__btn--next"><span>Next</span></button>
+		</div>
+	</div>
+
+	<script type="text/template" id="hero-data">
+		<div class="hero hero--info">
+			<p class="hero__info">Name: <%= name %></p>
+			<p class="hero__info">Height: <%= height %></p>
+			<p class="hero__info">Mass: <%= mass %></p>
+			<p class="hero__info">Hair Color: <%= hair_color %></p>
+			<p class="hero__info">Skin Color: <%= skin_color %></p>
+			<p class="hero__info">Eye Color: <%= eye_color %></p>
+			<p class="hero__info">Birth Year: <%= birth_year %></p>
+			<p class="hero__info">Gender: <%= gender %></p>
+		</div>
+		<div class="hero hero--episodes">
+		<% for (var i = 0; i < episodes.length; i++) { %>
+			<p class="hero__episode">Episode <%= episodes[i].id %>: <%= episodes[i].title %></p>
+		<% } %>
+		</div>
+	</script>
+	
+</body>
+</html>
