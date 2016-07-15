@@ -22,6 +22,8 @@ function createLogger(prefix) {
 	}
 
 	return login;
+
+	// return console.log.bind(console, new Date().toISOString(), prefix)
 }
 
 var myLogger = createLogger('My Logger');
