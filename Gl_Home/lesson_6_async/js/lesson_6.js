@@ -140,16 +140,14 @@ function loadPageEdited(bookId) {
 		.catch(function() {
 			document.getElementById('author').textContent = 'Error. Please refresh your browser';
 		})
-		.then(function(response) {
-			return response.text();
-		})
+		.then(checkResponseStatus)
 		.then(function(auth) {
 			document.getElementById('author').textContent = auth.name;
 			var similarBooksLoaded = 0;
 			var similarBooksAmount = auth.books.lenght;
 			return Promise.all( auth.books.map(function(url) {
 				return fetch(url)
-					.then(function(response) { return response.text();})
+					.then(checkResponseStatus)
 				})
 			);
 		})
