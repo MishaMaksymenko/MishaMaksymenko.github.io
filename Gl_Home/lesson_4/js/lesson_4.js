@@ -9,7 +9,7 @@ function Triangle(a,b,c) {
 	this.c = c;
 }	
 
-Triangle.prototype = new Shape;
+Triangle.prototype = new Shape('triangle');
 Triangle.prototype.constructor = Triangle;
 
 Triangle.prototype.getPerimeter = function() {
