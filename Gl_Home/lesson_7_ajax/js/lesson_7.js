@@ -8,8 +8,11 @@ function getHero(index) {
 	})
 	.then(function(heroData) {
    		hero = heroData;
-   		return Promise.all( heroData.films.map($.ajax) );
-   	})
+        return Promise.all( heroData.films.map(function(url) {return fetch(url)}) )
+    })
+    .then(function(responses) {
+		return Promise.all(responses.map( function(response) {return response.json()}) )
+    })
    	.then(function(episodes) {
    		hero.episodes = episodes.map(function(episode) {
    			return {"id":episode.episode_id, "title":episode.title};
