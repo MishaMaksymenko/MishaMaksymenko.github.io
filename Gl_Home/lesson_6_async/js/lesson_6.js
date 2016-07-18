@@ -134,12 +134,11 @@ function loadPageEdited(bookId) {
 			document.getElementById('author').textContent = auth.name;
 			var similarBooksLoaded = 0;
 			var similarBooksAmount = auth.books.lenght;
-			return Promise.all( auth.books.map(function(url) {
-				return fetch(url)
-					.then(responceTxt)
-				})
-			);
+			return Promise.all( auth.books.map(function(url) {return fetch(url)}));
 		})
+		.then(function(responses) {
+			return Promise.all(responses.map(responceTxt));
+    	})
 		.then(function(similarBooks) {
 			similarBooks.forEach(function(book) {
 				var p = document.getElementById('similar').appendChild('p').textContent = book;
