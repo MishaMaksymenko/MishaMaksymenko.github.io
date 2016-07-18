@@ -68,20 +68,15 @@ function getBookById(id) {
 	})
 }
 
-function checkResponseStatus(response) {
-	if (response.status === 200) {
-		return response.text();
-	} else {
-		var error = new Error(response.statusText)
-		throw error
-	}	
+function responceTxt(response) {
+	return response.text();
 }
 
 function getBookByIdEdited(id) {
 	document.getElementById('book').textContent = 'Please wait. Book is loading';
 
 	fetch('api/books/' + id)
-		.then(checkResponseStatus)
+		.then(responceTxt)
 		.then(function(book) {
 			document.getElementById('book').textContent = book.name;
 		})
@@ -129,40 +124,31 @@ function loadPageEdited(bookId) {
 	document.getElementById('similar').textContent = 'Please wait. Similar books are loading';
 
 	fetch('api/books/' + id)
-		.then(checkResponseStatus)
-		.catch(function() {
-			document.getElementById('book').textContent = 'Error. Please refresh your browser';
-		})
+		.then(responceTxt)
 		.then(function(book) {
 			document.getElementById('book').textContent = book.name;
 			return fetch('api/autors' + book.authorId);
 		})
-		.catch(function() {
-			document.getElementById('author').textContent = 'Error. Please refresh your browser';
-		})
-		.then(checkResponseStatus)
+		.then(responceTxt)
 		.then(function(auth) {
 			document.getElementById('author').textContent = auth.name;
 			var similarBooksLoaded = 0;
 			var similarBooksAmount = auth.books.lenght;
 			return Promise.all( auth.books.map(function(url) {
 				return fetch(url)
-					.then(checkResponseStatus)
+					.then(responceTxt)
 				})
 			);
 		})
 		.then(function(similarBooks) {
 			similarBooks.forEach(function(book) {
 				var p = document.getElementById('similar').appendChild('p').textContent = book;
-				similarBooksLoaded += 1
 			});
-​
-			if(similarBooksLoaded === similarBooksAmount) {
-				alert('Horray everything loaded');
-			}
+
+​			alert('Horray everything loaded');
 		})
 		.catch(function() {
-			document.getElementById('similar').textContent = 'Error. Please refresh your browser';
+			document.getElementById('book').textContent = 'Error. Please refresh your browser';
 		})
 }
 ​
