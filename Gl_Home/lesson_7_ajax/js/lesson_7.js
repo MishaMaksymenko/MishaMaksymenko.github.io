@@ -7,19 +7,19 @@ function getHero(index) {
 		return response.json();
 	})
 	.then(function(heroData) {
-   		hero = heroData;
-        return Promise.all( heroData.films.map(function(url) {return fetch(url)}) )
-    })
-    .then(function(responses) {
+		hero = heroData;
+		return Promise.all( heroData.films.map(function(url) {return fetch(url)}) )
+	})
+	.then(function(responses) {
 		return Promise.all(responses.map( function(response) {return response.json()}) )
-    })
-   	.then(function(episodes) {
-   		hero.episodes = episodes.map(function(episode) {
-   			return {"id":episode.episode_id, "title":episode.title};
-   		})
-   		hero.episodes.sort(episodesComp);
-   		renderHeroData(hero);
-   	})
+	})
+	.then(function(episodes) {
+		hero.episodes = episodes.map(function(episode) {
+			return {"id":episode.episode_id, "title":episode.title};
+		})
+		hero.episodes.sort(episodesComp);
+		renderHeroData(hero);
+	})
 }
 
 function episodesComp(episode_1, episode_2) {
