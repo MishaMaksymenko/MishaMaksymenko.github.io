@@ -8,7 +8,7 @@ function findBySelectot(selector) {
 	if ( typeof selector === 'string' ) {
 		var elem = document.querySelectorAll(selector);
 		var elemAmount = elem.length;
-		
+			
 		if ( !elemAmount ) { return undefined };
 
 		if ( elemAmount === 1) { return elem[0] };
@@ -26,7 +26,7 @@ function findNode(selector) {
 }
 
 function insertAfter(element, prevSibling) {
-	var parent = element.parentNode;
+	var parent = prevSibling.parentNode;
 	var nextSibling = prevSibling.nextSibling;
 	parent.insertBefore(element, nextSibling);
 }
@@ -51,12 +51,10 @@ function field() {
 		for (var j = 0; j < 8; j++) {
 			if ((i % 2 === 0 && j % 2 === 0) || (i % 2 !== 0 && j % 2 !== 0)) {
 				var blockNew = blockBlack.cloneNode();
-			} else {
-				var blockNew = block.cloneNode();	
-			}
+			} else { var blockNew = block.cloneNode(); }
 			field.appendChild(blockNew)
 		}	
 	};
-
+	
 	document.body.appendChild(field);
 }
