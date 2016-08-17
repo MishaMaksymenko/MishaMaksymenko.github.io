@@ -39,10 +39,11 @@ document.addEventListener("DOMContentLoaded", function(){
 			url: "action.php",
 			data: dataString,
 			cache: false,
-			success: function() {
-				alert("Welcome " + mail.value);
+			success: function(data) {
+				alert(data);
 			}
 		});
-	})
+
 		// alert("Welcome " + mail.value);
+	})
 });
