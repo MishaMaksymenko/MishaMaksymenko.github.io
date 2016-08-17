@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Exercise</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<picture>
+					<source srcset="img/logo-mini.png" media="(max-width: 768px)">
+					<img src="img/logo.png" alt="logo">
+				</picture>
+			</div>
+			<h1 class="title">Registration Exercise</h1>
+		</header>
+
+		<div class="reg-form">
+			<form action="action.php" method="post">
+			<!-- <form action="#"> -->
+				<div class="form-block">
+					<label for="mail">Email</label>
+					<input type="email" name="mail" id="mail" placeholder="example@example.com" required>
+				</div>
+				<div class="form-block">
+					<label for="birthday">Birthday</label>
+					<input type="date" name="birthday" id="birthday" min="1900-01-01" required>
+				</div>
+				<div class="form-block">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" required>
+				</div>
+				<div class="form-block">
+					<label for="password">Confirm Password</label>
+					<input type="password" name="password-confirm" id="password-confirm" required>
+				</div>
+				<div class="form-block">
+					<input type="submit" value="Register" id="sub">
+				</div>
+			</form>
+		</div>
+	</div>	
+</body>
+</html>
