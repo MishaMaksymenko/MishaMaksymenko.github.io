@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url(../font/LucidaGrande.ttc);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px 'LucidaGrande';
+}
+
+.logo {
+	padding: 6% 0 3% 0;	
+}
+
+.logo-link {
+	display: block;
+	position: relative;
+	width: 50vw;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+.logo-img {
+	width: 100%;
+	height: auto;
+}
+
+.title {
+	position: absolute;	
+	bottom: 10%;
+	right: 30%;
+	font-size: 3vw;
+	text-align: center;
+	color: #000;
+}
+
+.app {
+	display: block;
+	margin: 0 auto;
+	width: 75vw;
+}
+
+.app-img {
+	width: 100%;
+}
+
+.screen {
+	width: 90vw;
+	height: 180vw;
+	margin: 10% auto 0;
+	background:  url(../images/screen.gif) no-repeat 51% 52%, url(../images/iphone.jpg) no-repeat center;
+	background-size: 84% auto, contain;
+}
+
+.social-block {
+	position: relative;
+	overflow: hidden;
+	width: 60vw;
+	padding: 10% 0;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.social {
+	float: left;
+}
+
+.social-link {
+	display: block;
+	text-decoration: none;
+	width: 11vw;
+	height: 6vw;
+	margin: 0 2vw;
+	background: no-repeat center;
+	background-size: contain;
+}
+
+.social-link--fb {
+	background-image: url(../images/yumsty-facebook.png);
+}
+
+.social-link--insta {
+	background-image: url(../images/yumsty-instagram.png);
+}
+
+.social-link--tw {
+	background-image: url(../images/yumsty-twitter.png);
+}
+
+.social-link--mail {
+	background-image: url(../images/yumsty-email.png);
+}
+
+@media screen and (min-width: 769px) and (min-aspect-ratio: 10/9) {
+
+	.landing {
+		position: absolute;
+		top: 50%;
+  		left: 50%;
+  		transform: translate(0, -50%);
+	}
+
+	.logo {
+		padding: 1vh 0;
+	}
+
+	.logo-link,
+	.app,
+	.social-block {
+		width: 40vh;
+	}
+
+	.title {
+		font-size: 2.5vh;
+	}
+
+	.screen {
+		position: absolute;
+		top: 50%;
+  		right: 130%;
+  		transform: translate(0, -50%); 
+  		width: 40vh;
+		height: 80vh;
+		margin: 0;
+	}
+
+	.social-block {
+		padding: 4.5vh 0;
+	}
+
+	.social-link {
+		width: 8vh;
+		height: 3.5vh;
+		margin: 0 1vh;
+	}
+}
